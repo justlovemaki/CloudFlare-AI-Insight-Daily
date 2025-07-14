@@ -45,7 +45,7 @@ RUN echo "0 8 * * * /app/scripts/build.sh /app/scripts/work >> /proc/1/fd/1 2>> 
 # 设置时区环境变量，供应用程序读取
 ENV TZ=Asia/Shanghai
 # 项目所属
-ENV OWNER="justlovemaki"
+ENV OWNER="myanle"
 # 项目名称
 ENV REPO_NAME="CloudFlare-AI-Insight-Daily"
 # 个人访问Token (警告: 不建议硬编码Token，最好通过构建参数或运行时环境变量传入)
