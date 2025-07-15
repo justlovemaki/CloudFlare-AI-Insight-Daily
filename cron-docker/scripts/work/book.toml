@@ -6,4 +6,4 @@ title = "By 何夕2077"
 create-missing = true  
 
 [output.html]
-git-repository-url = "https://github.com/justlovemaki/CloudFlare-AI-Insight-Daily" # 替换成你的仓库地址
+git-repository-url = "https://github.com/myanle/CloudFlare-AI-Insight-Daily" # 替换成你的仓库地址
