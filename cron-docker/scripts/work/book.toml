@@ -2,7 +2,7 @@
 authors = []
 language = "zh"
 src = "CloudFlare-AI-Insight-Daily"
-title = "By 何夕2077"
+title = "By 猿思网"
 create-missing = true  
 
 [output.html]
