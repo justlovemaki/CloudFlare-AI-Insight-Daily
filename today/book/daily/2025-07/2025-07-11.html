@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>07-11-日刊 - AI 日报 By 何夕2077</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="为您精选 AI 领域的最新动态，包括行业新闻、热门开源项目、前沿学术论文、科技大V社交媒体言论，并通过 Google Gemini 模型进行智能处理与摘要生成，最终自动发布到 GitHub Pages 生成 AI 日报">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">AI 日报 By 何夕2077</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/justlovemaki/CloudFlare-AI-Insight-Daily" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="ai洞察日报-2025711"><a class="header" href="#ai洞察日报-2025711">AI洞察日报 2025/7/11</a></h2>
+<blockquote>
+<p><code>AI 日报</code> | <code>早八更新</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a></p>
+</blockquote>
+<h3 id="ai内容摘要"><a class="header" href="#ai内容摘要"><strong>AI内容摘要</strong></a></h3>
+<pre><code>AI产品更新加速，可灵AI、Perplexity发布新工具。
+OpenAI酝酿AI浏览器，Hugging Face推出开发机器人。
+研究关注生物医学，同时AI安全和行业投资受瞩目。
+</code></pre>
+<h3 id="ai产品与功能更新"><a class="header" href="#ai产品与功能更新"><strong>AI产品与功能更新</strong></a></h3>
+<ol>
+<li>
+<p><strong>可灵AI</strong>近日上线了全新的<strong>可图2.1模型</strong>🎉，它在<strong>指令遵循</strong>、<strong>人像美感</strong>、<strong>电影质感</strong>以及超过180种<strong>风格响应</strong>能力上都实现了全面升级，并且<strong>文字生成</strong>效果也得到了进一步增强。为庆祝这次重磅更新，<strong>可图2.1</strong>将向所有会员用户<strong>免费开放7天</strong>哦！涵盖文生图、单图及多图参考等超多实用功能等你来体验。</p>
+</li>
+<li>
+<p>Perplexity 隆重推出了<strong>Comet</strong>浏览器🚀，这可是一款深度融入AI的"<strong>认知型浏览器</strong>”，它通过整合增强型搜索、思维笔记和自动秘书功能，誓要彻底重构大家的Web浏览体验。这款浏览器独有的"<strong>对话空间</strong>”能让用户持续探索并追踪任务，还能聪明地学习你的偏好。目前<strong>Comet</strong>已推出Mac和Windows版本，未来还会拓展到更多平台，快来<a href="https://comet.perplexity.ai/">'更多详情'</a>下载尝鲜吧！
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022knb7f9mbh41ha5t5rz6e.avif" alt="Comet认知型浏览器" /> <br/></p>
+</li>
+<li>
+<p>Hugging Face 真是太懂开发者了！他们推出了专为AI开发者设计的<strong>Reachy Mini</strong>桌面机器人🤖，目标就是让开发者能更轻松地在物理设备上构建、修改和测试人工智能应用，这简直是践行其<strong>开源硬件</strong>和社区协作承诺的最佳证明。这款小机器人提供无线和精简两个版本，支持<strong>Python编程</strong>，而且还深度集成了Hugging Face Hub，未来一定会持续改进，释放开发者们无限的创造力！✨
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022kpvze1c9ftnbd16tqg0a.avif" alt="Reachy Mini桌面机器人" /> <br/></p>
+</li>
+<li>
+<p>有消息称，<strong>OpenAI</strong>正酝酿推出一款全新的<strong>AI浏览器</strong>，这野心可不小，它旨在彻底改变网络浏览体验，甚至要挑战谷歌Chrome的市场主导地位呢！💪 这款浏览器将巧妙利用其庞大的<strong>ChatGPT用户基础</strong>，提供类似<strong>ChatGPT</strong>的交互界面和深度整合的<strong>AI代理功能</strong>，剑指削弱谷歌在用户入口、行为数据控制及广告生态方面的优势。一场浏览器大战，悄然打响？⚔️</p>
+</li>
+<li>
+<p>机器之心最近深度评测了<strong>Lovart</strong>的国内版「<strong>星流 Agent</strong>」🎨，这简直是个"设计全能王”！它集成了数十个顶尖模型，能一站式生成图像、视频、品牌logo、海报甚至3D模型，效率高到令人惊叹。虽然在中文文本生成和手部细节处理上还有些进步空间，而且视频时长也有限制，但别小看它背后的团队哦！<strong>Liblib AI</strong>实力雄厚，核心成员可是来自<strong>小红书InstantX</strong>团队的，公司都已经完成数亿元融资啦。想体验魔法般的设计，快来<a href="https://www.xingliu.art/">'星流 Agent'</a>瞧瞧吧！
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022kr4jfctv10c6ejjzqweh.avif" alt="Lovart星流Agent设计" /> <br/>
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022ksr9fgnshdf2bp24xxvp.avif" alt="Lovart星流Agent设计" /> <br/></p>
+</li>
+</ol>
+<h3 id="ai前沿研究"><a class="header" href="#ai前沿研究"><strong>AI前沿研究</strong></a></h3>
+<ol>
+<li>劳伦斯伯克利国家实验室和斯坦福大学的科学家们，通过巧妙地利用<strong>转基因小鼠模型</strong>并结合<strong>机器学习</strong>🔬，首次系统绘制了<strong>人类发育增强子</strong>的<strong>突变敏感性图谱</strong>。这项突破性研究不仅揭示了非编码区对基因表达调控的<strong>关键作用</strong>，也为我们理解<strong>人类非编码变异</strong>和<strong>进化变化</strong>提供了坚实基础，更为未来设计用于生物技术和治疗目的的<strong>合成增强子</strong>指明了方向。棒呆！👏
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022kv8ve3xs6jzncvn13wvv.avif" alt="人类发育增强子研究" /> <br/> <a href="https://www.nature.com/articles/s41586-025-09182-w">'论文地址'</a></li>
+<li><strong>4KAgent</strong>真是一个神奇的"魔术师”！🧙‍♂️ 它是一个统一的<strong>代理式超分辨率通用系统</strong>，其目标就是把任意图像普遍提升到<strong>4K</strong>甚至更高的分辨率。这个系统通过<strong>Profiling</strong>、<strong>感知代理</strong>和<strong>修复代理</strong>三大核心组件的协同工作，能把那些严重退化的低分辨率输入，瞬间变成清晰逼真的4K大片！🎬 它在11个任务类别共26个基准测试中都取得了<strong>最先进</strong>的性能，简直是图像增强领域的顶尖高手！想深入了解，请访问<a href="https://arxiv.org/abs/2507.07105">'论文地址'</a>。</li>
+<li>这项最新研究可不简单，它通过构建迄今为止最大的<strong>MotionMillion</strong>数据集（包含超过200万高质量运动序列）和全面的<strong>MotionMillion-Eval</strong>基准，旨在推动<strong>文本到运动生成</strong>领域实现<strong>零样本泛化</strong>的重大突破！🤸‍♀️ 通过将模型扩展到<strong>7B参数</strong>，这种方法展现出强大的跨领域和复杂组合运动的<strong>零样本泛化</strong>能力。想了解更多精彩细节，请访问<a href="https://arxiv.org/abs/2507.07095">'论文地址'</a>。</li>
+</ol>
+<h3 id="ai行业展望与社会影响"><a class="header" href="#ai行业展望与社会影响"><strong>AI行业展望与社会影响</strong></a></h3>
+<ol>
+<li>
+<p><strong>亚马逊</strong>正考虑对人工智能初创公司<strong>Anthropic</strong>追加投资💰，这可不只是简单的投资，而是旨在深化<strong>战略合作</strong>，并共同建设<strong>全球最大的数据中心</strong>！这波操作无疑将进一步巩固亚马逊在AI领域的竞争力，而<strong>Anthropic</strong>也将因此获得亚马逊庞大数据中心的支持，满足其日益增长的计算需求。这无疑是一场强强联手，未来可期！🤝
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022kwn8e64s05rt08pmc4f7.avif" alt="亚马逊Anthropic合作" /> <br/></p>
+</li>
+<li>
+<p>SEO专家詹姆斯・布罗克班克近期测试发现，<strong>ChatGPT</strong>在提供<strong>商业推荐</strong>时，竟然可能引用<strong>被黑客攻击的网站</strong>和<strong>过期域名</strong>等<strong>不可靠信息来源</strong>！🚨 这可把业内人士都吓了一跳。专家们纷纷呼吁用户们务必<strong>核实AI推荐信息</strong>，同时，也郑重建议AI开发者们赶紧加强<strong>内容识别与过滤机制</strong>，别让AI成了"传谣者”呀！🤔</p>
+</li>
+<li>
+<p>最新研究揭示了一个令人担忧的消息：作为智能体领域行业标准的<strong>MCP协议</strong>存在重大<strong>安全漏洞</strong>！😱 攻击者竟然能利用<strong>大语言模型</strong>的指令/数据混淆漏洞，直接访问并<strong>泄露整个数据库</strong>。为了应对这种风险，专家们建议企业们尽可能使用<strong>只读模式</strong>，并添加<strong>提示注入过滤器</strong>，以增强数据安全性。数据安全无小事，大家可得长点心啊！🛡️</p>
+</li>
+</ol>
+<h3 id="开源top项目"><a class="header" href="#开源top项目"><strong>开源TOP项目</strong></a></h3>
+<ol>
+<li><strong>wordpress-develop</strong>是一个拥有<strong>2826</strong>颗星⭐的<strong>WordPress开发版</strong>Git仓库，它就像是<strong>WordPress Subversion仓库的镜像</strong>，极大地方便了开发者进行<strong>版本控制</strong>和<strong>协作</strong>。需要注意的是，所有拉取请求都得链接到现有的Trac工单哦。想参与WordPress的开发？这个项目就是你的起点！<a href="https://github.com/WordPress/wordpress-develop">'项目地址'</a></li>
+<li><strong>LMCache</strong>是一个获得<strong>2756</strong>颗星⭐的项目，它简直是<strong>大型语言模型（LLM）<strong>的"加速器”⚡！通过提供</strong>最快的KV缓存层</strong>，它能显著<strong>加速LLM</strong>的运行效率，让你的模型跑得飞快！🚀 快来看看吧：<a href="https://github.com/LMCache/LMCache">'项目地址'</a></li>
+<li><strong>Biomni</strong>是一个拥有<strong>846</strong>颗星⭐的<strong>通用生物医学AI智能体</strong>项目，它旨在为<strong>生物医学领域</strong>提供<strong>AI驱动的解决方案</strong>。想象一下，AI在医学研究中大显身手，未来可期啊！🧬🧠 了解更多：<a href="https://github.com/snap-stanford/Biomni">'项目地址'</a></li>
+<li><strong>MoneyPrinterV2</strong>这个开源项目简直太火了，拥有<strong>12167</strong>颗星⭐！它的核心功能就是<strong>自动化在线赚钱流程</strong>💰，听起来是不是很心动？它旨在帮助用户高效实现<strong>自动化收益</strong>，让赚钱变得更简单！🤖 快来看看：<a href="https://github.com/FujiwaraChoki/MoneyPrinterV2">'项目地址'</a></li>
+</ol>
+<h3 id="社媒分享"><a class="header" href="#社媒分享"><strong>社媒分享</strong></a></h3>
+<ol>
+<li>博主"卡尔的AI沃茨”对<strong>Grok4</strong>的最新体验评价真是褒贬不一呀！🤨 他指出，<strong>Grok4</strong>在处理<strong>数学</strong>和<strong>逻辑陷阱</strong>方面表现尚可，但遗憾的是，<strong>代码</strong>和<strong>图像推理</strong>能力却有点"拉跨”🤦‍♂️。不过，他可没打算就此打住，计划通过收集用户的真实案例来进行<strong>公开测试</strong>，旨在制作一份详尽的<strong>Grok4真实能力贴</strong>，力求全面展示这个模型的实际表现！📊
+<video src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022kz0zfk0s431ft35a7mth.mp4" controls="controls" width="100%"></video> <a href="https://x.com/aiwarts/status/1943311349737480539">'更多详情'</a></li>
+<li>博主Yangyi深情回顾了两年前<strong>GPT4</strong>刚发布时，自己是如何使用它开发项目的，那种<strong>24小时不间断工作</strong>的"未来设想”现在看来，已经伴随着<strong>Claude Code SDK</strong>等工具的巨大进步，真真切切地变成了现实！🤯 他强调，只有亲身实践这些<strong>AI Native Project</strong>，才能真切感受到AI带来的那股势不可挡的<strong>巨大潜力</strong>。这不就是技术改变生活最直接的写照吗？✨
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022m0pfe5kv2gfascwgz8yv.avif" alt="GPT4开发回顾" /> <br/>
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022m2g7exrr1ev0vycdpfen.avif" alt="GPT4开发回顾" /> <br/> <a href="https://x.com/Yangyixxxx/status/1943304406897954865">'更多详情'</a></li>
+<li>LysonOber兴奋地宣布<strong>Dify v1.6.0</strong>版本正式发布啦！🥳 这次的更新最大的亮点就是官方正式支持<strong>MCP</strong>（<strong>多模型协调器</strong>）！这意味着用户不仅能直接在Dify中添加<strong>外部MCP</strong>，还能将Dify自己的<strong>Agent/Workflow</strong>发布为MCP，这可极大地增强了平台的<strong>互操作性</strong>，简直是协作开发者的福音！🔗
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022m4jwe1qb4ys43cr9fqk4.avif" alt="Dify v1.6.0发布" /> <br/>
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022m6j5e1nbq8pwfd4z7n5w.avif" alt="Dify v1.6.0发布" /> <br/> <a href="https://x.com/lyson_ober/status/1943252778966499637">'更多详情'</a></li>
+<li>归藏(guizang.ai)发推预告：新一轮<strong>AI模型产品发布潮</strong>即将来临，大家都准备好了吗？！🤩 他汇总了<strong>OpenAI</strong>即将发布<strong>AI浏览器</strong>和<strong>开源o3 mini模型</strong>的重磅消息。不止如此，更多迹象还表明<strong>Gemini 3.0</strong>也即将震撼登场！而且，Jony Ive和Sam Altman的公司已经并入OpenAI，这背后又有什么大动作呢？一切都让人充满期待！📢
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022m8ksez286yzw29801j79.avif" alt="AI模型产品发布潮" /> <br/>
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022mangembrxy53k0an8z6s.avif" alt="AI模型产品发布潮" /> <br/> <a href="https://x.com/op7418/status/1943139745451884901">'更多详情'</a></li>
+</ol>
+<hr />
+<h2 id="收听语音版ai日报"><a class="header" href="#收听语音版ai日报"><strong>收听语音版AI日报</strong></a></h2>
+<div class="table-wrapper"><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody>
+<tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr>
+<tr><td><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆" /></td><td><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站" /></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../daily/2025-07/2025-07-12.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../daily/2025-07/2025-07-10.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../daily/2025-07/2025-07-12.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../daily/2025-07/2025-07-10.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

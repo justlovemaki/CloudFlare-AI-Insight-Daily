@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>07-09-日刊 - AI 日报 By 何夕2077</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="为您精选 AI 领域的最新动态，包括行业新闻、热门开源项目、前沿学术论文、科技大V社交媒体言论，并通过 Google Gemini 模型进行智能处理与摘要生成，最终自动发布到 GitHub Pages 生成 AI 日报">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">AI 日报 By 何夕2077</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/justlovemaki/CloudFlare-AI-Insight-Daily" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="ai洞察日报-202579"><a class="header" href="#ai洞察日报-202579">AI洞察日报 2025/7/9</a></h2>
+<blockquote>
+<p><code>AI 日报</code> | <code>早八更新</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a></p>
+</blockquote>
+<h3 id="ai内容摘要"><a class="header" href="#ai内容摘要"><strong>AI内容摘要</strong></a></h3>
+<pre><code>生数科技发布Vidu Q1视频模型，支持参考生与高清创作。
+钉钉推出AI表格，提升企业数据处理及自动化效率。
+苹果开发SceneScout助盲人导航，上海出台AI新政促产业。
+</code></pre>
+<h3 id="ai产品与功能更新"><a class="header" href="#ai产品与功能更新">AI产品与功能更新</a></h3>
+<ol>
+<li>
+<p>生数科技全球重磅推出 <strong>Vidu Q1</strong> 视频模型的<strong>参考生功能</strong> ✨，这项创新允许用户通过上传参考图，在短短几分钟内自动生成融合多元素的视频素材，极大地简化了创作流程。它不仅支持多达 <strong>7个主体</strong> 输入以确保商业应用中的高度一致性，还能实现电影级的 <strong>1080P</strong> 高清画质和 <strong>AI音效</strong> 🚀，同时将制作成本降至传统版权素材的极小部分，颠覆性地提升了视频内容创作的效率和灵活性。💡
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022q4kze9hb0w3vy4v2k79c.avif" alt="Vidu Q1功能展示" /> <br/></p>
+</li>
+<li>
+<p><strong>钉钉</strong> 正式发布了 <strong>AI表格</strong> 产品 📊，通过"<strong>表格即文档</strong>”的创新功能，重新定义了企业数据处理与信息管理。它实现了 <strong>智能字段处理</strong>、<strong>零门槛数据分析</strong> 和 <strong>自动化流程创建</strong> 的强大能力 💪，旨在帮助企业轻松构建自定义业务系统，大幅提升办公效率，将企业运营推向 <strong>AI驱动</strong> 的新时代。✨</p>
+</li>
+<li>
+<p>苹果公司与哥伦比亚大学近日联合开发了名为 <strong>SceneScout</strong> 的 <strong>AI原型系统</strong> 🍎🗺️，旨在结合 <strong>苹果地图</strong> API 和 <strong>多模态大语言模型</strong>，为 <strong>盲人及低视力群体</strong> 提供前所未有的街景导航辅助。该系统不仅提供 <strong>路线预览</strong> 和 <strong>虚拟探索</strong> 功能，还在测试中显示 <strong>72%的AI生成描述准确</strong>，受到用户的高度评价，显著提升了出行体验。💖
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022q66tf64v3yz73t867t5v.avif" alt="SceneScout导航辅助" /> <br/></p>
+</li>
+<li>
+<p>微软 Windows 11 系统即将推出备受期待的 <strong>AI动态壁纸功能</strong> 🖼️✨，其相关代码已在最新预览版中悄然出现，尽管尚未激活。这项功能有望让用户选择主题并自动更新壁纸，为 Windows 11 带来更加 <strong>个性化</strong> 和 <strong>智能</strong> 的桌面体验，是不是超酷炫呢？🆕
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022q7yxe3as0vd3aht0s3np.avif" alt="Windows 11动态壁纸" /> <br/></p>
+</li>
+<li>
+<p>微软在 Azure AI Foundry 中上线了 <strong>Deep Research</strong> 的公开预览版 🔬💻，这是一个强大的 <strong>AI智能体</strong>，能够自动化复杂的 <strong>研究和分析</strong> 任务。它巧妙地结合了 <strong>必应搜索</strong> 和 OpenAI 的 <strong>GPT系列模型</strong>，智能拆解问题并精准获取信息，显著提升了科研及商业决策效率，并支持 API 集成，让你的研究工作事半功倍！📈 <a href="https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUQ1VGQUEzRlBIMVU2UFlHSFpSNkpOR0paRSQlQCN0PWcu">更多详情</a>。
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022q9d2fjztmrbakkn178ye.avif" alt="Deep Research智能体" /> <br/></p>
+</li>
+</ol>
+<h3 id="ai前沿研究"><a class="header" href="#ai前沿研究">AI前沿研究</a></h3>
+<ol>
+<li>
+<p>阿里巴巴集团重磅发布了其最新 <strong>多模态大语言模型HumanOmniV2</strong> 🧠✨，该模型以其卓越的 <strong>全局上下文理解</strong> 和 <strong>多模态推理能力</strong> 在AI领域引起了广泛关注。它在阿里巴巴自研的 IntentBench 测试中取得了 <strong>69.33%</strong> 的亮眼准确率 🚀，并通过独创的强制性上下文总结机制，有效克服了传统模型在复杂任务中的"捷径问题”，预示着其在消费和企业级AI应用中具有广阔前景。更多详情：<a href="https://github.com/HumanMLLM/HumanOmniV2">'模型地址'</a>，<a href="https://huggingface.co/PhilipC/HumanOmniV2">'模型地址'</a>。
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022qb3rfmxsc36h75p230fw.avif" alt="HumanOmniV2模型" /> <br/>
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022qd8sfxxs0xv28rmrqk6c.avif" alt="HumanOmniV2性能" /> <br/></p>
+</li>
+<li>
+<p><strong>卡内基梅隆大学</strong> 和 <strong>Cartesia AI</strong> 的研究者们发现了一个惊人的秘密 💡：仅需 <strong>500步训练</strong> 干预，就能使 <strong>循环模型</strong> 获得处理长达 <strong>256k序列</strong> 的惊人 <strong>泛化能力</strong>，这彻底突破了其在长序列任务上的局限 🤯！他们还提出了"<strong>未探索状态假说</strong>”来解释这一现象。这项研究通过一系列巧妙的训练干预措施，显著提升了 <strong>循环模型</strong> 的性能和稳定性，为其在深度学习领域的发展开辟了全新的方向 🔬。
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022qg23fges7m4wecf7qph2.avif" alt="循环模型研究图" /> <br/></p>
+</li>
+<li>
+<p>这项研究提出了一种名为 <strong>AutoHDR</strong> 的自动化历史文献修复新方法 📜✨，并配套发布了首个全页 <strong>历史文献修复数据集</strong>（FPHDR），旨在解决当前修复方案的局限性。<strong>AutoHDR</strong> 通过模拟历史学家工作流，显著提升了受损文档的 <strong>OCR准确率</strong>，为人机协作修复珍贵文化遗产开辟了新途径，其模型和数据集已开源 🤖，更多详情可见<a href="https://arxiv.org/abs/2507.05108">'论文地址'</a>和<a href="https://github.com/SCUT-DLVCLab/AutoHDR">'模型地址'</a>。</p>
+</li>
+</ol>
+<h3 id="ai行业展望与社会影响"><a class="header" href="#ai行业展望与社会影响">AI行业展望与社会影响</a></h3>
+<ol>
+<li>
+<p>初创公司 Lovable 凭借创新的"<strong>AI原生</strong>”工作模式 💸🤖，在短短七个月内就实现了高达 <strong>8000万美元</strong> 的年收入，真是令人惊叹！其团队中半数成员为 <strong>AI原生员工</strong>，这彻底颠覆了传统科技公司的工作范式 🚀。这种模式极大提升了效率，让创意能够借助AI迅速落地，同时也预示着 <strong>AI原生员工</strong> 的崛起将深刻影响未来的组织结构和管理模式，引发对冗余职位的深思🤔。
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022qhhaf9hrrz9b50phys6d.avif" alt="AI原生工作模式" /> <br/></p>
+</li>
+<li>
+<p>因 <strong>ChatGPT</strong> 错误推荐 <strong>Soundslice</strong> 网站支持 <strong>ASCII吉他谱</strong> 导入功能 🎸😂，导致大量用户涌入该网站，迫使开发者不得不紧急开发并上线这一原本不存在的功能。此次"失误”引发网友热议，却意外地认为这反倒激发了 <strong>创新灵感</strong>，推动了技术进步，这波操作真是"因祸得福”啊！💡
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022qjw5f6eacz0gmv1yc9bm.avif" alt="ChatGPT图标" /> <br/></p>
+</li>
+<li>
+<p>上海市近期发布了17项新政 🏙️💰，旨在促进全市 <strong>软件和信息服务业</strong> 高质量发展，为优质 <strong>AI项目</strong> 提供最高 <strong>30%的补助</strong>。这些政策将通过 <strong>算力券</strong> 等方式降低企业成本，大力推动 <strong>大模型</strong> 应用，并支持 <strong>AI代码生成</strong>，以此吸引高端人才并为行业发展注入新活力，上海这是要放大招了啊！🚀✨
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022qm4hf0dvbgtacmk5rwaq.avif" alt="上海地标建筑" /> <br/></p>
+</li>
+</ol>
+<h3 id="开源top项目"><a class="header" href="#开源top项目">开源TOP项目</a></h3>
+<ol>
+<li>
+<p>谷歌开源的 <strong>MCP Toolbox for Databases</strong> 🛠️🌐 是一款旨在通过 <strong>模型上下文协议（MCP）</strong> 简化 <strong>AI智能体</strong> 与 <strong>SQL数据库</strong> 交互的工具，实现高效、安全的集成。它支持不到10行 Python 代码快速连接，并内置 <strong>连接池管理</strong>、<strong>身份验证</strong> 及 <strong>模式自省</strong> 等核心功能，极大地提升了开发效率，是数据库集成的一大利器！🚀 其<a href="https://github.com/googleapis/genai-toolbox">'项目地址'</a>。
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022qnjnfrysxjrch2bvn6fw.avif" alt="MCP Toolbox图标" /> <br/></p>
+</li>
+<li>
+<p>项目"<strong>12-factor-agents</strong>” (⭐7177) 💡💻 致力于探索构建真正适用于生产环境的 <strong>LLM驱动软件</strong> 原则，旨在解决如何交付高质量 <strong>大模型</strong> 应用给客户的挑战。它就像一本实践指南，指导开发者将LLM从实验室带到真实世界！✨ <a href="https://github.com/humanlayer/12-factor-agents">'项目地址'</a></p>
+</li>
+<li>
+<p><strong>WebAgent</strong> 🕷️🌐 是由通义实验室开发的，旨在解决 <strong>信息检索</strong> 问题的 Web 智能体项目，包含了 <strong>WebWalker</strong>、<strong>WebDancer</strong> 和 <strong>WebSailor</strong> 等模块，目前已获得1935颗星。该项目为构建高效的 <strong>信息检索</strong> 系统提供了强大支持，让你在信息海洋中畅游无阻！🔎 <a href="https://github.com/Alibaba-NLP/WebAgent">'项目地址'</a></p>
+</li>
+<li>
+<p><strong>Hands-On-Large-Language-Models</strong> 📚🧑‍💻 是 O'Reilly 图书《动手实践大型语言模型》的官方代码仓库，旨在帮助读者 <strong>动手实践</strong> 和 <strong>深入理解大型语言模型</strong>，目前已获得11333颗星。该项目为 LLM 的 <strong>学习与应用</strong> 提供了丰富的 <strong>代码示例</strong>，是LLM学习者的宝藏！✨ <a href="https://github.com/HandsOnLLM/Hands-On-Large-Language-Models">'项目地址'</a></p>
+</li>
+<li>
+<p><strong>GenAI_Agents</strong> 🤖🧠 仓库汇集了各种 <strong>生成式AI智能体技术</strong> 的 <strong>教程与实现</strong>，旨在为构建 <strong>智能、交互式AI系统</strong> 提供从基础到高级的 <strong>全面指导</strong>，目前拥有13914颗星。它为开发者深入探索和应用 <strong>生成式AI代理</strong> 提供了宝贵的资源，助你成为AI智能体大师！📖 <a href="https://github.com/NirDiamant/GenAI_Agents">'项目地址'</a></p>
+</li>
+<li>
+<p>日本AI公司 <strong>Sakana AI</strong> 推出名为 <strong>AB-MCTS</strong> 的创新算法 🤝🧠，该算法允许 <strong>大型语言模型</strong>（如ChatGPT、Gemini、DeepSeek）像人类团队一样协作处理问题，并在 <strong>ARC-AGI-2</strong> 等基准测试中取得显著优于单一模型的表现。这项研究表明，通过结合不同模型的优势，可以更有效地解决复杂挑战，该算法已作为 <strong>TreeQuest</strong> 开源，为AI协作打开了新世界的大门！💡 更多详情可见<a href="https://github.com/SakanaAI/treequest">'项目地址'</a>。</p>
+</li>
+</ol>
+<h3 id="社媒分享"><a class="header" href="#社媒分享">社媒分享</a></h3>
+<ol>
+<li>
+<p>宝玉在社交媒体上深入探讨了 <strong>AI写代码</strong> 的效率问题 💻🤔，他认为虽然 AI 在某些任务中能极大地提升效率（如 <strong>ClaudeCode</strong> 一小时完成 YouTube 爬虫），但对于复杂或"<strong>屎山代码</strong>”的应用，AI的提效作用有限，甚至可能加速复杂代码的产生，因为 AI 难以清晰理解需求且生成质量有时无法满足高标准。💬 <a href="https://x.com/dotey/status/1942580441367863327">更多详情</a>。</p>
+</li>
+<li>
+<p>wwwgoubuli 认为，在许多实际场景中，预先编排好的 <strong>定性工作流</strong> 比 <strong>智能代理（agent）</strong> 更为方便和实用 🔄💡，这表明 <strong>工作流编排</strong> 在特定应用中仍具有显著优势。🧐 <a href="https://x.com/wwwgoubuli/status/1942519738233426360">更多详情</a></p>
+</li>
+<li>
+<p>歸藏(guizang.ai) 分享了一张通过"藏师傅”<strong>提示词</strong> 生成的高质量 <strong>长图</strong> 🎨✨，展示了这种 <strong>提示词技术</strong> 在视觉内容创作方面的有效应用，简直是把AI玩出了花儿！📸 <a href="https://x.com/op7418/status/1942430126899163318">更多详情</a>
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022qq65fyet213s1r77zj1d.avif" alt="AI生成艺术长图" /> <br/></p>
+</li>
+<li>
+<p>歸藏(guizang.ai) 指出一段文字被划线98次 ✍️📈，这反映了大家对某种 <strong>普遍变化的共识</strong>。他分享了此前与朋友在 AGI Bar 关于 <strong>AI对内容创作</strong> 影响及 <strong>流量嗅觉培养</strong> 的讨论，并已将这些洞见整理发布，引人深思 🤔。 <a href="https://x.com/op7418/status/1942428799280488582">更多详情</a>
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022qryhfygv4kr60gn02hyz.avif" alt="文章划线" /> <br/>
+<br/> <img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022qw3bfhmr2p03t0yd8mrz.avif" alt="AGI Bar讨论" /> <br/></p>
+</li>
+<li>
+<p>Elvis 盛赞 <strong>Gemini CLI</strong> 与 <strong>MCP服务器</strong> 的结合 ✨🚀，认为其在 <strong>编程</strong> 场景中表现出色，同时在 <strong>转录</strong> 和 <strong>写作</strong> 等创意任务上也有卓越表现，并分享了视频以展示其强大功能。🎥 <a href="https://x.com/omarsar0/status/1942418143609033115">更多详情</a>
+</video></p>
+</li>
+</ol>
+<hr />
+<h2 id="收听语音版ai日报"><a class="header" href="#收听语音版ai日报"><strong>收听语音版AI日报</strong></a></h2>
+<div class="table-wrapper"><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody>
+<tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr>
+<tr><td><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆" /></td><td><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站" /></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../daily/2025-07/2025-07-10.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../daily/2025-07/2025-07-08.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../daily/2025-07/2025-07-10.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../daily/2025-07/2025-07-08.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

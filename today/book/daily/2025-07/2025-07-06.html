@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>07-06-日刊 - AI 日报 By 何夕2077</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="为您精选 AI 领域的最新动态，包括行业新闻、热门开源项目、前沿学术论文、科技大V社交媒体言论，并通过 Google Gemini 模型进行智能处理与摘要生成，最终自动发布到 GitHub Pages 生成 AI 日报">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">AI 日报 By 何夕2077</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/justlovemaki/CloudFlare-AI-Insight-Daily" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="ai洞察日报-202576"><a class="header" href="#ai洞察日报-202576">AI洞察日报 2025/7/6</a></h2>
+<blockquote>
+<p><code>AI 日报</code> | <code>早八更新</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a></p>
+</blockquote>
+<h3 id="ai内容摘要"><a class="header" href="#ai内容摘要"><strong>AI内容摘要</strong></a></h3>
+<pre><code>Grok 4模型测试表现出色，AI研究如MAS-GPT不断创新。
+然而，AI模型易受无关信息干扰；AI内容泛滥正损害学术与社会公信力。
+AI引发科技业裁员潮及产品定价争议，但也正重塑内容创作与行业发展。
+</code></pre>
+<h3 id="ai产品与功能更新"><a class="header" href="#ai产品与功能更新">AI产品与功能更新</a></h3>
+<ol>
+<li><strong>Grok 4</strong>和<strong>Grok 4 Code</strong>的<strong>基准测试</strong>结果似乎曝光了！😲 <strong>Grok 4</strong>在<strong>HLE</strong>（人类最后考试）中竟然取得了高达<strong>45%<strong>的惊人成绩，在</strong>GPQA</strong>和<strong>AIME '25</strong>等测试中也表现出色，远超或与多数竞争对手持平。尽管有网友质疑<strong>HLE</strong>高分可能存在测试差异，但如果这些数据属实，<strong>Grok 4</strong>无疑将是<strong>AI大模型</strong>发展的一大步！让我们拭目以待xAI的官方验证吧。🚀 <a href="https://www.jiqizhixin.com/articles/2025-07-05-3">更多详情</a>
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022x081fajbm9e9tpd2ycvx.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022x081fajbm9e9tpd2ycvx.avif" alt="图片" title="Grok 4基准测试结果" /></a> <br/></li>
+</ol>
+<h3 id="ai前沿研究"><a class="header" href="#ai前沿研究">AI前沿研究</a></h3>
+<ol>
+<li>
+<p>上海交通大学等机构联合推出了<strong>MAS-GPT</strong>项目，旨在解决复杂的<strong>多智能体系统</strong>（MAS）构建难题。它采用<strong>生成式MAS设计范式</strong>，只需一句Query就能自动生成整套MAS的Python代码，让MAS构建变得像和<strong>ChatGPT</strong>聊天一样简单！🤩 在多项实验中，<strong>MAS-GPT</strong>展现了更高的<strong>准确率</strong>、更强的<strong>泛化性</strong>、更低的<strong>成本</strong>以及极佳的<strong>兼容性</strong>，这有望加速我们迈向<strong>AGI</strong>第五阶段的步伐。🚀 <a href="https://arxiv.org/abs/2503.03686">论文地址</a> <a href="https://github.com/MASWorks/MAS-GPT">代码链接</a> <a href="https://huggingface.co/MASWorks/MAS-GPT-32B">模型链接</a>
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022x1rjfb79fm5xqm60pe30.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022x1rjfb79fm5xqm60pe30.avif" alt="图片" title="MAS-GPT项目优势对比" /></a> <br/></p>
+</li>
+<li>
+<p>一项最新研究发现，在<strong>大模型</strong>的数学题干中，加入"猫咪睡觉”😴等看似<strong>无关信息</strong>，竟然能显著干扰其<strong>推理能力</strong>，导致<strong>DeepSeek-R1</strong>和<strong>OpenAI o1</strong>等模型的错误率翻倍甚至更高，而且<strong>token消耗</strong>也大大增加！😱 这简直是给LLM的<strong>脆弱性</strong>敲响了警钟，对未来的模型<strong>鲁棒性</strong>研究提出了新的挑战。🤔 <a href="https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&amp;mid=2247808013&amp;idx=1&amp;sn=272e54ef1f178a2887c268ce178c4c13">更多详情</a>
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022x32we42bsh86ekajn8pn.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022x32we42bsh86ekajn8pn.avif" alt="图片" title="LLM鲁棒性研究挑战" /></a> <br/></p>
+</li>
+</ol>
+<h3 id="ai行业展望与社会影响"><a class="header" href="#ai行业展望与社会影响">AI行业展望与社会影响</a></h3>
+<ol>
+<li>
+<p>AI技术正让互联网变成"巨型垃圾场”🗑️，大量AI生成的诡异视频利用<strong>恐怖谷效应</strong>在<strong>社交媒体</strong>上疯传，<strong>学术领域</strong>也充斥着低质量甚至<strong>虚假论文</strong>，严重损害了<strong>学术公信力</strong>和<strong>科学价值</strong>。这种现象不仅迎合了大众的猎奇心理，更因AI工具的低成本特性而愈演愈烈。提醒我们：拥抱AI的同时，更要警惕其潜在的负面影响！🚨 <a href="https://www.jiqizhixin.com/articles/2025-07-05-5">更多详情</a>
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022x5paecs91yg5zj0vxzxp.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022x5paecs91yg5zj0vxzxp.avif" alt="图片" title="AI生成诡异视频传播" /></a> <br/></p>
+</li>
+<li>
+<p>2025年上半年，全球<strong>科技行业</strong>因<strong>AI</strong>驱动的结构调整，已经裁员94,000人，其中<strong>微软</strong>近期裁员9,000人。更具争议的是，一位Xbox高管竟建议被裁员工用AI来管理情绪，真是让人哭笑不得。😂 这波<strong>裁员潮</strong>并非传统经济危机，而是AI替代部分岗位并引导公司加大AI投资的结果，软件工程师、HR、客服等多个领域都未能幸免。💔 <a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&amp;mid=2652607008&amp;idx=1&amp;sn=f4eaf35d3c648f6182f0049eeef9b758">更多详情</a>
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022x764ett8cy5rywp2k3a7.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022x764ett8cy5rywp2k3a7.avif" alt="图片" title="AI驱动的科技行业裁员" /></a> <br/></p>
+</li>
+</ol>
+<h3 id="开源top项目"><a class="header" href="#开源top项目">开源TOP项目</a></h3>
+<ol>
+<li>
+<p><strong>rustfs</strong> 是一个有931颗星的<strong>高性能分布式对象存储</strong>项目，旨在成为 <strong>MinIO</strong> 的优质替代方案。✨ <a href="https://github.com/rustfs/rustfs">项目地址</a></p>
+</li>
+<li>
+<p>拥有15931颗星的 <strong>ciencia-da-computacao</strong> 项目，为想自学的你提供了<strong>全面的计算机科学之路</strong>。🎓🚀 <a href="https://github.com/Universidade-Livre/ciencia-da-computacao">项目地址</a></p>
+</li>
+<li>
+<p><strong>toutatis</strong> 是一款拥有2599颗星的实用工具，能从<strong>Instagram</strong>账户中提取<strong>电子邮件</strong>、<strong>电话号码</strong>等关键信息。🤫 <a href="https://github.com/megadose/toutatis">项目地址</a></p>
+</li>
+<li>
+<p><strong>Motia</strong> 是一款拥有3464星的开源项目，旨在为<strong>API</strong>、<strong>事件</strong>和<strong>AI智能体</strong>提供统一的<strong>后端框架</strong>，完美解决后端开发中的集成难题。🛠️✨ <a href="https://github.com/MotiaDev/motia">项目地址</a></p>
+</li>
+</ol>
+<h3 id="社媒分享"><a class="header" href="#社媒分享">社媒分享</a></h3>
+<ol>
+<li>
+<p>orange.ai 分享了对<strong>TicNote</strong>的体验，虽然它设计轻薄，但因容易忘记录音而导致使用体验复杂。😟 他对这种根据录音量收取转录费用的"<strong>硬件+订阅</strong>”商业模式进行了深入思考，认为它既不合理又巧妙地实现了盈利。💰🤔
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xa58e5cat0wkae4hr7r0.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xa58e5cat0wkae4hr7r0.avif" alt="图片" title="TicNote轻薄设计" /></a> <br/>
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xdc2f2wrmww7m6pqa7bk.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xdc2f2wrmww7m6pqa7bk.avif" alt="图片" title="TicNote录音功能" /></a> <br/></p>
+</li>
+<li>
+<p>归藏(guizang.ai)提醒我们，<strong>AI产品定价</strong>可得小心翼翼！📢 他提到<strong>Cursor</strong>悄悄地把<strong>20美元无限额度</strong>改成了<strong>有限API额度</strong>，这让用户体验瞬间跌到谷底，还得多花钱，结果就是大量用户在Reddit上炸锅，纷纷要求退款！😡
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xfjsf2c8hghddgrr5z7r.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xfjsf2c8hghddgrr5z7r.avif" alt="图片" title="Cursor产品定价引争议" /></a> <br/></p>
+</li>
+<li>
+<p>归藏(guizang.ai)分享了他们朋友圈里关于<strong>AI对内容创作影响</strong>和如何培养"<strong>流量嗅觉</strong>”的热烈讨论。🔥他指出，AI正在彻底改变内容生产（例如<strong>AIGC</strong>大幅提升效率，<strong>AI Agent</strong>还能辅助产出），促使创作者们转向"<strong>整活</strong>”和<strong>IP共创</strong>的新模式。要<strong>获取流量</strong>，创作者们必须"多看、多收集、善用AI”，才能敏锐洞察<strong>平台算法</strong>和用户审美的变化，从而更高级地"<strong>蹭热点</strong>”并提升内容影响力哦！📈
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xhyre7atrayydbg4sv0e.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xhyre7atrayydbg4sv0e.avif" alt="图片" title="AI对内容创作影响" /></a> <br/></p>
+</li>
+<li>
+<p>楷鹏Dev强力推荐了一份超实用的<strong>开源资源</strong>——<strong>《中文技术文档写作风格指南》</strong>！✍️ 他指出，这份指南能完美弥补中小学教育中缺失的<strong>技术文档写作规范</strong>，为广大技术人员提供了宝贵的实用指引，帮助大家写出更规范、更易读的文档。👍 <a href="https://m.okjike.com/originalPosts/686890634618c88abfcc3761">更多详情</a>
+<br/> <a href="https://cdnv2.ruguoapp.com/FvDm4UbL5sWjaNfVdh1NZw-I57kXv3.png"><img src="https://cdnv2.ruguoapp.com/FvDm4UbL5sWjaNfVdh1NZw-I57kXv3.png" alt="图片" title="中文技术文档风格指南" /></a> <br/></p>
+</li>
+<li>
+<p>meng shao分享了数字营销创业者<strong>Jake Ward</strong>关于<strong>SEO未来趋势</strong>的深刻洞察。🔍 随着ChatGPT处理海量查询和谷歌转向<strong>AI驱动搜索</strong>，传统的SEO正在被彻底<strong>颠覆</strong>，"<strong>LLM优化</strong>”时代已经悄然来临！他提出了六个关键策略，旨在帮助品牌和网站在AI主导的搜索环境中，通过赢得<strong>品牌提及</strong>、建立<strong>品牌资产</strong>、成为<strong>权威信息源</strong>等方式脱颖而出，否则就可能面临被边缘化的风险哦。⚠️ <a href="https://x.com/shao__meng/status/1941297172986855492">更多详情</a>
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xm6cey1b6e2pk8nbwrp2.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xm6cey1b6e2pk8nbwrp2.avif" alt="图片" title="SEO未来趋势与LLM优化" /></a> <br/></p>
+</li>
+<li>
+<p>宝玉分享了Pedro Tavares的犀利观点：<strong>软件开发</strong>的真正<strong>瓶颈</strong>从来都不是<strong>写代码</strong>本身，而是那些"人类开销”——比如<strong>代码审查</strong>、<strong>知识传递</strong>、<strong>测试</strong>、<strong>调试</strong>和<strong>人际沟通</strong>！🤯 尽管<strong>大语言模型</strong>（LLM）可以嗖嗖地生成代码，但它们只是把工作从编写代码转移到了更复杂的<strong>理解、测试和信任代码</strong>上，根本没能解决团队效率的深层瓶颈。🤔 <a href="https://x.com/dotey/status/1941247337625498002">更多详情</a>
+<br/> <a href="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xnwxe43bgfpx7gh7bwpe.avif"><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k022xnwxe43bgfpx7gh7bwpe.avif" alt="图片" title="软件开发真正瓶颈" /></a> <br/></p>
+</li>
+</ol>
+<hr />
+<h2 id="收听语音版ai日报"><a class="header" href="#收听语音版ai日报"><strong>收听语音版AI日报</strong></a></h2>
+<div class="table-wrapper"><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody>
+<tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr>
+<tr><td><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆" /></td><td><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站" /></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../daily/2025-07/2025-07-07.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../daily/2025-07/2025-07-05.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../daily/2025-07/2025-07-07.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../daily/2025-07/2025-07-05.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

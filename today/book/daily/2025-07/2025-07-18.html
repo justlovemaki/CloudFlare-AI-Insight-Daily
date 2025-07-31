@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>07-18-日刊 - AI 日报 By 何夕2077</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="为您精选 AI 领域的最新动态，包括行业新闻、热门开源项目、前沿学术论文、科技大V社交媒体言论，并通过 Google Gemini 模型进行智能处理与摘要生成，最终自动发布到 GitHub Pages 生成 AI 日报">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">AI 日报 By 何夕2077</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/justlovemaki/CloudFlare-AI-Insight-Daily" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="ai洞察日报-2025718"><a class="header" href="#ai洞察日报-2025718">AI洞察日报 2025/7/18</a></h2>
+<blockquote>
+<p><code>AI 日报</code> | <code>早八更新</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a></p>
+</blockquote>
+<h3 id="ai内容摘要"><a class="header" href="#ai内容摘要"><strong>AI内容摘要</strong></a></h3>
+<pre><code>近期AI资讯显示，小米推出快捷找车，谷歌搜索集成AI代打电话等实用功能。
+前沿研究聚焦效率与真实感，如谷歌MoR架构和赋予3D模型物理属性的技术。
+同时，AI行业人才竞争加剧，各类开源工具如ReadMeX也正赋能开发者。
+</code></pre>
+<h3 id="ai产品与功能更新"><a class="header" href="#ai产品与功能更新">AI产品与功能更新</a></h3>
+<ol>
+<li>
+<p>还在为找不到车而抓狂？🤯 最新的<strong>AI资讯</strong>显示，<strong>小米汽车</strong>正为YU7车主送上一剂"猛药”——<strong>快捷找车</strong>功能。只需在App中轻轻一点，锁车时车辆便会自动拍摄周围环境的五张"写真”，彻底告别在停车场里的迷茫。这不只是简单的拍照，其背后是小米自研的<strong>图像理解</strong>大模型在默默发力，能精准识别出车位号、楼层和地标，让你一眼看穿车在哪。更妙的是，只需呼叫"<strong>超级小爱</strong>同学”，它就能用语音和弹窗告诉你爱车的确切位置。这则<strong>AI资讯</strong>真正体现了"科技让懒人更快乐”的理念，是值得关注的<strong>AI资讯</strong>。这一功能的普及，将是<strong>AI</strong>领域的一大进步。</p>
+<p><br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k0cgkdaeetst5ye4c84b6zja.avif" alt="AI资讯：小米AI寻车功能" /><br/></p>
+</li>
+<li>
+<p>分分合合终有时，Claude Sonnet 4"浪子回头”重返Windsurf！(o´ω'o)ﾉ 在经历了与<strong>Anthropic</strong>的"爱恨纠葛”后，<strong>AI编码</strong>神器<strong>Windsurf</strong>高调宣布，明星模型<strong>Claude Sonnet 4</strong>已重回其怀抱，付费用户可直接调用。这则<strong>AI资讯</strong>在开发者社区引发热议。此前，由于OpenAI的收购传闻，Anthropic一度对Windsurf设限，导致用户只能"曲线救国”，也让不少开发者转向竞品。这次"破镜重圆”不仅让程序员们能再次享受到Claude Sonnet 4强大的代码生成与重构能力，也预示着AI巨头间的竞争与合作关系正变得愈发微妙。这出"分手又复合”的大戏，最终还是用户成了最大赢家，是近期<strong>AI资讯</strong>中的一则趣闻。</p>
+</li>
+<li>
+<p>还在用搜索引擎手动查资料、打电话？你已经落伍了！<strong>谷歌搜索</strong>正迎来三大<strong>AI</strong>革新，誓要从信息入口变身你的全能生活管家。✨ 首先，<strong>谷歌</strong>为搜索的AI模式换上了<strong>Gemini 2.5 Pro</strong>这个"最强大脑”，复杂推理、编程算数不在话下，这则<strong>AI资讯</strong>令人振奋。其次，专为深度研究打造的<strong>Deep Search</strong>功能也将开放，一键生成带引用的深度报告，让你秒变专家。最令人惊叹的是，<strong>AI代打电话</strong>功能横空出世：只需搜索"附近的宠物美容”，AI便会自动联系商家、询问价格、预约时间，甚至可能帮你"砍个单”。这项率先在美国推出的功能，预示着<strong>AI</strong>正在重塑本地生活服务，未来的<strong>AI资讯</strong>将更多关注这类应用。以后接电话的可能都不是人类了！这无疑是本周最重磅的<strong>AI资讯</strong>之一。</p>
+<p><br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k0cgkf68fkb9bc2kfyrjgytw.avif" alt="AI资讯：AI帮你打电话" /><br/></p>
+</li>
+<li>
+<p>开会动嘴，<strong>ChatGPT</strong>动手！<strong>macOS桌面应用</strong>现已向Plus用户全面推送<strong>录音模式</strong>。🚀 无论你是开脑暴会还是随口记录灵感，它都能化身你的贴身会议纪要员，不仅能实时转录，还能自动提炼关键点，甚至直接生成任务清单和代码。这则<strong>AI资讯</strong>对生产力工具的未来意义重大。以后开会，老板再也不用担心你走神了，因为AI替你记笔记、做总结，效率直接拉满。这无疑是<strong>AI资讯</strong>领域的一大进步。快去<a href="https://x.com/imxiaohu/status/1945792034734018942">AI资讯：聊天窗口底部看看那个新按钮吧</a>！</p>
+<p><br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k0cgkh88ea4vp2n6y468dt14.avif" alt="AI资讯：ChatGPT录音模式" /><br/></p>
+</li>
+</ol>
+<h3 id="ai前沿研究"><a class="header" href="#ai前沿研究">AI前沿研究</a></h3>
+<ol>
+<li>
+<p>大模型虽然强大，但高昂的计算成本一直是其难以普及的痛点。现在，<strong>谷歌DeepMind</strong>带来了破局者——全新的<a href="http://alphaxiv.org/abs/2507.10524"><strong>AI资讯：MoR架构</strong>（Mixture-of-Recursions）</a>，有望成为传统<strong>Transformer</strong>模型的"效率杀手”。MoR的聪明之处在于，它不再对所有信息都"一视同仁”，而是通过动态路由机制，为每个数据（token）智能分配恰到好处的"思考深度”。这种"按需计算”的策略，结合先进的缓存机制，使得<strong>MoR</strong>能用不到一半的参数，就达到甚至超越<strong>Transformer</strong>的性能。这不只是简单的优化，更像是一次架构上的革命，预示着AI将进入一个更轻量、更高效、更易于大规模部署的新时代。这篇<strong>AI资讯</strong>值得所有从业者关注。</p>
+<p><br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k0cgkk2hfn7s03tnpxtsdkh6.avif" alt="AI资讯：MoR架构示意图" /><br/></p>
+</li>
+<li>
+<p>AI终于告别"反应迟钝”了？🤔 两篇论文为<strong>强化学习</strong>装上"反射神经”。想象一下，如果AI玩格斗游戏，每出一拳都得"暂停思考”一秒，那场面该多尴尬。这正是当前强化学习（RL）在现实世界中的窘境。传统AI训练像个<strong>回合制游戏</strong>，环境和AI轮流"发呆”，导致机器人厨师烤焦煎蛋，自动驾驶汽车反应慢半拍。Mila实验室的两篇ICLR论文直击痛点，提出了一套天才方案，旨在终结AI的"<strong>延迟</strong>”和"<strong>无动作</strong>”两大顽疾。第一篇论文提出"<strong>交错异步推理</strong>”，好比给AI一个多核大脑，让多个"思考进程”轮班上岗，确保动作永不掉线。第二篇论文则借鉴CPU的<strong>流水线设计</strong>，创造了带"<strong>时序跳跃连接</strong>”的神经网络架构。两项技术合璧，意味着未来我们可以部署规模巨大却又<strong>反应神速</strong>的AI模型，让它们在瞬息万变的领域大显身手。这正是本期<strong>AI资讯</strong>深度关注的焦点。</p>
+<p><br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k0cgknvxer9tps7bjgxh4c6q.avif" alt="AI资讯：AI实时反应模型" /><br/>
+<br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k0cgkq96fz68q203hra9yzxp.avif" alt="AI资讯：AI流水线架构" /><br/></p>
+</li>
+<li>
+<p>AI不光会"捏脸”，还要搞懂"筋骨”！一篇名为 <a href="https://arxiv.org/abs/2507.12465"><strong>AI资讯：《PhysX：基于物理的3D资产生成》</strong></a> 的新研究，正让3D模型拥有物理灵魂。目前的<strong>3D生成AI</strong>就像个顶级美工，能"捏”出精美绝伦的虚拟物品，但对物理属性一无所知。这让它们在<strong>物理模拟</strong>和<strong>机器人训练</strong>等严肃应用中成了"花瓶摆设”。研究者们推出了开创性范式<code>PhysX</code>，旨在为3D资产注入<strong>物理灵魂</strong>。为此，他们构建了首个带有系统性物理标注的3D数据集<code>PhysXNet</code>，并开发了<code>PhysXGen</code>框架，能够从一张简单的图片生成兼具逼真外观和可信物理属性的3D模型。这项工作标志着AI生成内容正从"虚拟美学”迈向"<strong>物理真实</strong>”，为创造更可靠的<strong>数字孪生</strong>和加速<strong>具身智能</strong>的研发铺平了道路，是<strong>AI资讯</strong>领域的前沿探索。</p>
+</li>
+</ol>
+<h3 id="ai行业展望与社会影响"><a class="header" href="#ai行业展望与社会影响">AI行业展望与社会影响</a></h3>
+<ol>
+<li>
+<p><strong>字节跳动</strong>的AI棋局再起波澜，一场没有硝烟的"<strong>人才战争</strong>”正在上演。其豆包大模型视觉多模态负责人<strong>杨建朝</strong>宣布"暂时休息”，接替他的是来自阿里M6大模型的前技术负责人<strong>周畅</strong>。这场看似平静的人事变动，实则是全球AI人才战争的缩影，也是<strong>AI资讯</strong>持续追踪的热点。杨建朝的暂时离岗，折射出AI前沿领域难以想象的工作强度与跨国协作的压力。而周畅的加入，则显示了字节为稳固其<strong>Seed视觉模型</strong>团队，不惜重金在全球范围内"揽才”的决心。在这场巨头的博弈中，每一个核心人物的去留，都可能改变未来技术版图的走向。这类<strong>AI资讯</strong>揭示了行业竞争的激烈程度。</p>
+<p><br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k0cgks01ehp9d0f2aw96y24d.avif" alt="AI资讯：字节跳动AI团队" /><br/></p>
+</li>
+</ol>
+<h3 id="开源top项目"><a class="header" href="#开源top项目">开源TOP项目</a></h3>
+<ol>
+<li>
+<p>对于广大开发者而言，写代码是创造，写文档则是"修行”。现在，一款名为<a href="https://readmex.com/"><strong>ReadMeX - AI资讯</strong></a>的国产免费AI神器，正让这场"修行”变得轻松愉快。你只需扔给它一个<strong>GitHub</strong>项目地址，它就能像一位资深技术作家一样，迅速生成结构清晰、内容专业的<strong>README</strong>文件，还支持中英双语。其速度和质量甚至超越了同类知名工具。<strong>ReadMeX</strong>不仅能生成文档，还集成了多仓库管理和热门开源项目文档聚合功能，让它成为了一个强大的知识管理平台。这款工具的出现，无疑是给开发者社区的一份大礼，让大家能把更多精力投入到真正的创新中。这则<strong>AI资讯</strong>对开发者极具价值。</p>
+<p><br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k0cgkvhcfbws7w254tscm2ej.avif" alt="AI资讯：ReadMeX文档生成" /><br/></p>
+</li>
+<li>
+<p>这里有三款改变游戏规则的开源神器，是<strong>AI资讯</strong>精选的开发者宝藏：</p>
+<ul>
+<li><strong>数据正骨师</strong>：面对像毛线团一样杂乱的 <strong>JSON</strong> 或 <strong>YAML</strong> 文件，是不是感觉眼睛快要"裂开”了？别急，让<a href="https://github.com/AykutSarac/jsoncrack.com"><strong>JSONCrack - AI资讯</strong></a> 来给你做个"数据正骨”。这个狂揽 <strong>4万 Star</strong> 的神器，能将多种数据格式一键转换为<strong>交互式图表</strong>，让数据结构瞬间清晰。</li>
+<li><strong>SQL翻译官</strong>：还在为写不出复杂的 <strong>SQL 查询</strong>而头疼吗？<a href="https://github.com/vanna-ai/vanna"><strong>Vanna - AI资讯</strong></a> 项目利用 <strong>RAG</strong> 和<strong>大语言模型</strong>技术，将自然语言精准翻译成 SQL。这则<strong>AI资讯</strong>表明，数据分析的门槛正在被 AI 无情地踏平。</li>
+<li><strong>数字福尔摩斯</strong>：想知道你的<strong>用户名</strong>在互联网上留下了多少足迹吗？<a href="https://github.com/soxoj/maigret"><strong>Maigret - AI资讯</strong></a> 能根据一个用户名，在数千个网站上搜寻你的"分身”，让你一窥**开源情报（OSINT）**的强大威力。</li>
+</ul>
+</li>
+<li>
+<p>如果你想开一家餐厅，是希望拥有一套规定好菜单的"加盟套餐”，还是一个能自由发挥的"中央厨房”？大多数开发者会选后者，而 <a href="https://github.com/strapi/strapi"><strong>Strapi - AI资讯</strong></a> 正是这样一个"中央厨房”。作为领先的开源<strong>无头（Headless）CMS</strong>，它将内容管理（后端）与内容呈现（前端）彻底分离。这意味着你可以随心所欲地将内容发布到任何地方。<code>Strapi</code>完全由 <strong>JavaScript/TypeScript</strong> 构建，拥有超过<strong>6.7万</strong>的GitHub Star，凭借其高度的可定制性，成为了无数追求灵活性的开发团队的首选。这则<strong>AI资讯</strong>对于构建现代应用至关重要。</p>
+</li>
+<li>
+<p>AI智能体的搭建又添新"乐高”积木！备受欢迎的<strong>开源</strong>画布SDK <strong>tldraw</strong> 正式宣布，现已支持构建<strong>Agentic Workflow</strong>（智能体工作流）。这意味着开发者们又多了一个强大的可视化"沙盘”，可以像搭积木一样设计和调试复杂的AI代理。从本质上看，<code>tldraw</code>巧妙地将自由的<strong>画布</strong>和结构化的<strong>流程图</strong>合二为一，为创造下一代<a href="https://x.com/tuturetom/status/1945781406363418799"><strong>AI资讯：智能交互产品提供了无限可能</strong></a>。</p>
+<p><br/> <video src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/07/news_01k0cgkyrsebcr3ym07pr386c5.mp4" controls="controls" width="100%"></video><br/></p>
+</li>
+</ol>
+<h3 id="社媒分享"><a class="header" href="#社媒分享">社媒分享</a></h3>
+<ol>
+<li>
+<p>不写一行代码，两天搭完一个项目？有网友分享了他使用国产新秀 <strong>Kimi K2</strong> 进行"氛围感编程”的奇妙体验。据他描述，Kimi K2不仅能写代码，审美还相当在线，会主动添加动效、寻找符合风格的素材，彻底摆脱了"直男AI”的刻板印象。它甚至能精准领会"沉浸感”这类玄学需求，在API对接上表现也相当稳健。这则<strong>AI资讯</strong>非常有趣。虽然速度和长对话记忆尚有不足，但考虑到其编程能力已接近<strong>Claude Code</strong>的八成，而成本却低到"令人发指”，可谓是<a href="https://m.okjike.com/originalPosts/687865237ee613ba5a349270"><strong>AI资讯：国产AI在代码生成领域的一匹黑马</strong></a>。</p>
+</li>
+<li>
+<p>AI绘画界的王者 <strong>Midjourney</strong> 终于要亲自下场，给行业来一次"降维打击”了！官方宣布正在探索开放企业级 <strong>API</strong>，这意味着开发者未来能将 Midjourney 的"魔法画笔”直接集成到自己的产品中。<a href="https://x.com/op7418/status/1945636798153331084"><strong>AI资讯：目前，官方已开放申请通道</strong></a>，准备好迎接新一轮的创意大爆炸吧！</p>
+</li>
+<li>
+<p>与AI这位新伙伴的合作体验，并非总是那么丝滑。有网友分享了与 <strong>AI编程</strong> 协作的心路历程，堪称一场"心情过山车”🎢：从最初对 <strong>Vibe Coding</strong> 的惊艳，到被AI生成的Bug气到想"手撕代码”，再到最终无奈接受"也不是不能用”的现实。正如其所言，<a href="https://x.com/dotey/status/1945518805188272458"><strong>AI资讯：许多人正陷入AI编程的泥沼中</strong></a>：一边嫌弃它，一边又离不开它。</p>
+</li>
+<li>
+<p>不过，这种"折磨”或许正是AI带来的独特价值。另一位网友观察到，AI更像一位直言不讳的"损友”，专门治你的"想法模糊症”。它会用一个漏洞百出的原型demo来无情"打脸”，逼你把脑中的一厢情愿梳理成清晰逻辑。不同于和人类同事的反复争论，<a href="https://x.com/wwwgoubuli/status/1945656567560593671"><strong>AI资讯：AI用赤裸裸的结果说话，倒逼着你升级思维</strong></a>，让你在"被虐”中实现自我提升。</p>
+</li>
+</ol>
+<hr />
+<h2 id="收听语音版ai日报"><a class="header" href="#收听语音版ai日报"><strong>收听语音版AI日报</strong></a></h2>
+<div class="table-wrapper"><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody>
+<tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr>
+<tr><td><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆" /></td><td><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站" /></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../daily/2025-07/2025-07-19.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../daily/2025-07/2025-07-17.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../daily/2025-07/2025-07-19.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../daily/2025-07/2025-07-17.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
