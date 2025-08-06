@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 06 Aug 2025 23:15:44 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 06 Aug 2025 23:55:10 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2025-08-07日刊]]></title>
           <link>https://ai.hubtoday.app//2025-08/2025-08-07/</link>
           <guid>https://ai.hubtoday.app//2025-08/2025-08-07/</guid>
-          <pubDate>Thu, 07 Aug 2025 07:15:43 GMT</pubDate>
+          <pubDate>Thu, 07 Aug 2025 07:55:09 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2025/8/7</h2><blockquote><p><code>AI 日报</code> | <code>早八更新</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>Anthropic发布Claude 4.1，其编码和代理任务能力得到显著的提升。
 OpenAI则开源了gpt-oss模型，推动高性能AI向大众普及并降低成本。
 谷歌Gemini新增Storybook功能，可根据一句话生成带插图的故事书。
