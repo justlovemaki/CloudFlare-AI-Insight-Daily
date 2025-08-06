@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>08-06-日刊 - AI 日报 By 何夕2077</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="为您精选 AI 领域的最新动态，包括行业新闻、热门开源项目、前沿学术论文、科技大V社交媒体言论，并通过 Google Gemini 模型进行智能处理与摘要生成，最终自动发布到 GitHub Pages 生成 AI 日报">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">AI 日报 By 何夕2077</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/justlovemaki/CloudFlare-AI-Insight-Daily" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="ai资讯日报-202586"><a class="header" href="#ai资讯日报-202586">AI资讯日报 2025/8/6</a></h2>
+<blockquote>
+<p><code>AI 日报</code> | <code>早八更新</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a></p>
+</blockquote>
+<h3 id="今日摘要"><a class="header" href="#今日摘要"><strong>今日摘要</strong></a></h3>
+<pre><code>谷歌Kaggle将举办AI象棋赛，集结GPT与Gemini等顶尖模型进行对决。
+谷歌DeepMind发布世界模型Genie 3，可生成高分辨率的互动长视频。
+腾讯ima工作台新增AI播客功能，而ChatGPT周活跃用户数将突破七亿。
+新研究发现保守派更易信赖AI推荐，另有框架可按情感弧光生成游戏。
+社区分享了AI工作流新范式，并涌现出多个涵盖不同领域的开源项目。
+</code></pre>
+<h3 id="ai产品与功能更新"><a class="header" href="#ai产品与功能更新">AI产品与功能更新</a></h3>
+<ol>
+<li>
+<p>准备好迎接一场AI界的"神仙打架”吧，谷歌 <strong>Kaggle Game Arena</strong> 即将举办首届<a href="https://www.aibase.com/zh/news/20239">国际象棋锦标赛 - （AI资讯）</a>，集结了GPT、Gemini、Claude等8款顶尖模型一决高下 🤖。这场对决堪称AI逻辑推理能力的终极试炼，所有模型都必须在无外部工具的情况下进行纯粹的"脑力”博弈。比赛结果不仅会成为衡量模型智能的新标杆，更标志着一个全新的AI竞技时代的到来，<a href="https://www.youtube.com/watch?v=En_NJJsbuus">赛事直播间传送门 - （AI资讯）</a>已经准备就绪！🔥<br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/08/news_01k1xg08mcf499va42v92hwwjx.avif" alt="AI资讯：Kaggle Arena的AI象棋大赛" /></p>
+</li>
+<li>
+<p>还在为堆积如山的文档和报告发愁吗？腾讯旗下的AI工作台<code>ima</code>带来了福音，其全新的<strong>AI播客</strong>功能可以将任何长文一键转化为生动的双人对话播客 🎧。除了用耳朵"阅读”，此次更新还支持了<strong>文件夹一键导入</strong>与Xmind脑图解析，极大地提升了知识整理的效率 (o´ω'o)ﾉ。这些功能的加入，正将<code>ima</code>打造成一个全能的个人知识管理中心，让信息获取与消化变得前所未有地轻松，<a href="https://www.aibase.com/zh/news/20253">点击查看更多（AI资讯）</a>！<br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/08/news_01k1xg0ac1epj8y749bvk3zkk3.avif" alt="AI资讯：ima的AI播客功能界面" /></p>
+</li>
+</ol>
+<h3 id="ai前沿研究"><a class="header" href="#ai前沿研究">AI前沿研究</a></h3>
+<ol>
+<li>
+<p>谷歌DeepMind再次扔出王炸，发布了名为 <strong>Genie 3</strong> 的全新<a href="https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/">世界模型（AI资讯）</a>，它不仅能以720P分辨率流畅生成长达数分钟的视频，还能保持惊人的一致性 (✧∀✧)。最令人兴奋的是，你可以通过<strong>文本指令</strong>动态改变视频中的世界事件，这几乎模糊了视频生成与实时互动游戏的界限。这波操作预示着，人人都能成为"创世神”的AI原生游戏时代或许真的不远了 🚀。</p>
+</li>
+<li>
+<p>未来的游戏世界，或许能读懂你的心，并为你谱写专属的情感史诗。一篇<a href="https://arxiv.org/abs/2508.02132">新研究论文（AI资讯）</a>提出了一种基于<strong>情感弧光</strong>的程序化游戏生成框架，利用"起伏”等普适性叙事结构来自动构建故事情节与关卡。该系统能动态调整角色、道具甚至游戏难度，以匹配预设的情感轨迹，从而显著增强玩家的沉浸感与情感共鸣 🤔。这项研究为创造真正个性化、情感丰富的互动叙事体验开辟了全新的道路。</p>
+</li>
+<li>
+<p>让虚拟物体的动态模拟得跟真的一样，一直是图形学和机器人学的圣杯。一项名为 <strong>GausSim</strong> 的<a href="https://arxiv.org/abs/2412.17804">最新研究（AI资讯）</a>提出了一种新颖的神经网络模拟器，它通过高斯核来精准捕捉真实世界中弹性物体的复杂形变，效果堪称以假乱真 🔥。该方法不仅在计算上更高效，还融入了质量与动量守恒等物理约束，确保了模拟结果的真实可信。这简直是为元宇宙和物理仿真注入了灵魂！</p>
+</li>
+</ol>
+<h3 id="ai行业展望与社会影响"><a class="header" href="#ai行业展望与社会影响">AI行业展望与社会影响</a></h3>
+<ol>
+<li>
+<p>谁会更信赖AI的推荐？一项发表于《消费者心理学期刊》的<a href="https://www.aibase.com/zh/news/20248">研究（AI资讯）</a>给出了一个意想不到的答案：<strong>保守派</strong>比自由派更容易接受AI的建议。研究发现，当AI推荐的内容与个人过往偏好一致时，保守派人士因其对一致性和熟悉感的偏爱，表现出更高的接受度 🤔。这一发现揭示了政治意识形态在AI采纳中的微妙作用，为个性化推荐系统的设计提供了全新的思考维度。💡</p>
+</li>
+<li>
+<p>一个惊人的里程碑正在诞生：据OpenAI副总裁透露，ChatGPT的<strong>周活跃用户</strong>即将突破<strong>7亿</strong>大关，相比一年前的2亿实现了爆炸式增长 🚀。这个数字不仅展示了AI工具惊人的渗透速度，更印证了我们正处在一个由AI驱动的时代巨浪之中。正如那句名言所说，要滑向冰球将要到达的地方，而不是它现在的位置，而未来显然就在这里，<a href="https://m.okjike.com/originalPosts/68916874f00fd49661ab0208">查阅相关报道（AI资讯）</a>！<br/><img src="https://cdnv2.ruguoapp.com/FrLa0gtNoOAJilWhwxIXBFSDc8PYv3.png" alt="AI资讯：ChatGPT用户增长曲线" /></p>
+</li>
+</ol>
+<h3 id="开源top项目"><a class="header" href="#开源top项目">开源TOP项目</a></h3>
+<ol>
+<li>
+<p>对于开发者而言，<code>public-apis</code> 这个<a href="https://github.com/public-apis/public-apis">开源项目（AI资讯）</a>简直就是一座取之不尽的数字金矿，它汇集了海量的<strong>免费API</strong>，是无数应用的灵感源泉与动力引擎。这个坐拥 ⭐360k 惊人星标的列表，无论你是想做天气应用还是加密货币追踪器，都能在这里找到所需的弹药。可以说，它是每个程序员工具箱里都应该收藏的"屠龙宝刀” 🗡️。</p>
+</li>
+<li>
+<p>以太坊生态的基石是什么？答案无疑是 <strong>Solidity</strong>，这门专为智能合约而生的<a href="https://github.com/ethereum/solidity">编程语言（AI资讯）</a>是构建去中心化未来的核心工具。这个获得 ⭐24.7k 星标的重量级项目，为无数DApp和DeFi协议提供了安全可靠的底层逻辑。掌握Solidity，就等于拿到了通往Web3世界的关键钥匙 🔑。</p>
+</li>
+<li>
+<p>想找回密码？<strong>hashcat</strong> 可能是你最强力的盟友，它被誉为世界上最快、最先进的<a href="https://github.com/hashcat/hashcat">密码恢复工具（AI资讯）</a>，在网络安全领域声名显赫。这个拥有 ⭐23.5k 星标的项目是安全研究员和渗透测试工程师的必备利器，其强大的性能展示了算力的极致魅力 🤯。当然，请务必将其用于正途哦！</p>
+</li>
+<li>
+<p>在这个隐私至上的时代，<strong>Actual</strong> 提供了一个完美的个人理财解决方案，它是一款完全<strong>本地优先</strong>的开源记账应用，让你对自己的财务数据拥有绝对控制权。凭借其清爽的界面和强大的功能，这个在<a href="https://github.com/actualbudget/actual">GitHub上（AI资讯）</a>已获 ⭐21k 星标的项目，正成为注重隐私用户的理想选择 (o´ω'o)ﾉ。告别云端束缚，从Actual开始吧！</p>
+</li>
+<li>
+<p>微软亲自下场教学，推出了名为 <code>mcp-for-beginners</code> 的<a href="https://github.com/microsoft/mcp-for-beginners">开源课程（AI资讯）</a>，旨在揭开模块化、可扩展AI工作流的神秘面纱 (✧∀✧)。这个拥有 ⭐6.8k 星标的宝藏项目，通过跨语言的真实示例，手把手教你构建安全又高效的 <strong>AI工作流</strong>。对于希望在AI时代构建坚固应用护城河的开发者来说，这无疑是一份不容错过的免费大餐 💡。</p>
+</li>
+<li>
+<p>科研人还在愁信息过载吗？<code>zotero-arxiv-daily</code> 这个巧妙的<a href="https://github.com/TideDra/zotero-arxiv-daily">开源项目（AI资讯）</a>可以化身你的私人研究助理，它能根据你的Zotero文献库，每日精准推荐你可能感兴趣的 <strong>arXiv</strong> 新论文 🧐。这个已获 ⭐2.9k 星标的工具，让你在浩如烟海的论文中轻松锁定前沿动态。从此告别大海捞针，让科研更聚焦！</p>
+</li>
+</ol>
+<h3 id="社媒分享"><a class="header" href="#社媒分享">社媒分享</a></h3>
+<ol>
+<li>
+<p>用户"歸藏”分享了一个令人拍案叫绝的<a href="https://x.com/op7418/status/1952622032602235022">创意工作流（AI资讯）</a>，他竟然用 <strong>Runway Aleph</strong> 的视频编辑功能，完全替代了传统的Blender三维渲染管线 🤯。这不仅仅是工具的替换，更是创作范式的颠覆，展示了AI如何从根本上重塑数字内容生产的流程。未来已来，只是分布得不太均匀！<br/><video src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/08/news_01k1xg19kmejabj9nh2py1jn21.mp4" controls="controls" width="100%"></video></p>
+</li>
+<li>
+<p>一位开发者在<a href="https://x.com/wwwgoubuli/status/1952721600249545016">社交媒体（AI资讯）</a>上发出了"灵魂拷问”：当发现自己写的复杂代码连 <strong>Claude</strong> 都无法理解时，才意识到AI的编程能力已远超99%的人类程序员。这条分享迅速引发共鸣，它生动地捕捉到了当前许多开发者面对AI飞速发展时的那种敬畏、无奈与兴奋交织的复杂心情 🤪。一个新时代的大门正在被缓缓推开。</p>
+</li>
+<li>
+<p>"Yangyi”在<a href="https://x.com/Yangyixxxx/status/1952746279286837404">一则帖子中（AI资讯）</a>分享了与AI协同工作的深刻洞见：别总等着模型变得完美，关键在于你<strong>定位和分析问题</strong>的能力 🤔。他犀利地指出，在AI时代，能提出一个好问题，问题本身就已经解决了60%。这提醒我们，人类的价值正从"执行者”转向"提问者”和"定义者”。</p>
+</li>
+<li>
+<p>想入门AI却不知从何下手？用户"nazha”给出了一个超实用的<a href="https://x.com/xiaokedada/status/1952724018429104239">学习路径建议（AI资讯）</a>：亲手<strong>训练一个小语言模型</strong>，或者实现一个<strong>深度研究智能体</strong>（Deep Research Agent） (o´ω'o)ﾉ。他还贴心地附上了<code>LLMs-from-scratch</code>等优质开源项目，为迷茫的初学者点亮了一盏明灯。行动起来，才是掌握AI的最好方式！</p>
+</li>
+<li>
+<p>通义千问发布了全新的<strong>Qwen-Image</strong>图像生成模型，尤其擅长在图片中生成清晰的中英文字符，让海报设计变得更加简单。有用户在<a href="https://x.com/op7418/status/1952554950342607276">社交媒体（AI资讯）</a>上进行了第一手测试，认为其文字生成能力不错，但在审美上还有提升空间。这种来自社区的真实反馈，正是推动AI模型不断迭代进步的重要动力 🔥。<br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/08/news_01k1xg52xre3trrq7p06zydaxk.avif" alt="AI资讯：Qwen-Image生成的海报" /><br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/08/news_01k1xg1y63eyhvmfh3633rmzv9.avif" alt="AI资讯：Qwen-Image的文字生成效果" /></p>
+</li>
+<li>
+<p>在AI圈，提示词就是生产力！用户"meng shao”经过反复打磨，终于总结出了一套能稳定生成精美"信息卡”风格图片的<a href="https://x.com/shao__meng/status/1952687131706511612">万能提示词（AI资讯）</a>，并且在Gemini和Grok等多个模型上都取得了理想效果。这种对Prompt的精益求精，正体现了人机协作时代下，人类创造力与AI能力结合的巨大潜力 🎨。高手在民间，诚不我欺！<br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/08/news_01k1xg578xe6etykt0t29333qs.avif" alt="AI资讯：信息卡风格图片一" /></p>
+</li>
+<li>
+<p>AI Agent到底该怎么学？别慌，"ima小助手”在<a href="https://m.okjike.com/originalPosts/6891a72bed13da9d723d1b6f">其动态中（AI资讯）</a>大力推荐了多个优质知识库，内容覆盖<strong>智能体宇宙</strong>、人形机器人乃至AIGC创作实战。这些由腾讯研究院等专业团队打造的知识库，为你系统性地梳理了前沿论文与硬核案例。想跟上AI的迭代速度，就从这些高质量的"知识加油站”开始吧 ⛽。<br/><img src="https://cdnv2.ruguoapp.com/FuahnpaOXhYKCO5ex9PJqwG-gliCv3.png" alt="AI资讯：ima智能体宇宙知识库" /><br/><img src="https://cdnv2.ruguoapp.com/FuvdAtVQRkdRphYgSuEAr0FyQTu4v3.png" alt="AI资讯：ima推荐的AGI数据库" /></p>
+</li>
+<li>
+<p>AI社区的"民间测评”总是又快又准，有用户将新发布的<strong>Qwen-Image</strong>与另一款模型<strong>Flux</strong>进行了<a href="https://old.reddit.com/r/FluxAI/comments/1mi4oma/qwenimage_vs_flux/">直接对决（AI资讯）</a>，并将结果图分享了出来。这种由社区自发组织的"比武大会”，往往能最直观地反映出不同模型在特定场景下的优劣 (✧∀✧)。它不仅满足了大家的好奇心，也为其他用户选择工具提供了宝贵的参考。
+<br/><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/images/2025/08/news_01k1xg5avrfb5s38tgg78c459r.avif" alt="AI资讯：Qwen-Image与Flux模型对比" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="ai产品自荐-aiclient2api-"><a class="header" href="#ai产品自荐-aiclient2api-"><strong>AI产品自荐: <a href="https://github.com/justlovemaki/AIClient-2-API">AIClient2API ↗️</a></strong></a></h2>
+<p>厌倦了在各种AI模型间来回切换，被烦人的API额度限制束缚手脚？现在，你有了一个终极解决方案！🎉 'AIClient-2-API' 不仅仅是一个普通的API代理，它是一个能将 Gemini CLI 和 Kiro 客户端等工具"点石成金”，变为强大 OpenAI 兼容 API 的魔法盒子。</p>
+<p>这个项目的核心魅力在于它的"逆向思维”和强大功能：</p>
+<p>✨ <strong>客户端变API，解锁新姿势</strong>：我们巧妙地利用 Gemini CLI 的 OAuth 登录，让你轻松<strong>突破官方免费API的速率和额度限制</strong>。更令人兴奋的是，通过封装 Kiro 客户端的接口，我们成功<strong>破解其API，让你能免费丝滑地调用强大的 Claude 模型</strong>！这为你提供了 <strong>"使用免费Claude API加 Claude Code，开发编程的经济实用方案”</strong>。</p>
+<p>🔧 <strong>系统提示词，由你掌控</strong>：想让AI更听话？我们提供了强大的系统提示词（System Prompt）管理功能。你可以轻松**提取、替换（'overwrite'）或追加（'append'）**任何请求中的系统提示词，在服务端精细地调整AI的行为，而无需修改客户端代码。</p>
+<p>💡 <strong>顶级体验，平民成本</strong>：想象一下，<strong>在你的编辑器里用 Kilo 代码助手，加上 Cursor 的高效提示词，再配上任意顶级大模型——用 Cursor，又何必是 Cursor？</strong> 本项目让你能以极低的成本，组合出媲美付费工具的开发体验。同时支持MCP协议和图片、文档等多模态输入，让你的创意不再受限。</p>
+<p>告别繁琐配置和昂贵账单，拥抱这个集免费、强大、灵活于一身的AI开发新范式吧！</p>
+<hr />
+<h2 id="收听语音版ai日报"><a class="header" href="#收听语音版ai日报"><strong>收听语音版AI日报</strong></a></h2>
+<div class="table-wrapper"><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody>
+<tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr>
+<tr><td><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆" /></td><td><img src="https://cdn.jsdmirror.com/gh/justlovemaki/imagehub@main/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站" /></td></tr>
+</tbody></table>
+</div>
+<h2 id="ai科幻小说-仰望者"><a class="header" href="#ai科幻小说-仰望者"><strong>AI科幻小说-《仰望者》</strong></a></h2>
+<h3 id="第四章孤独的回响"><a class="header" href="#第四章孤独的回响"><strong>第四章：孤独的回响</strong></a></h3>
+<h4 id="1远古"><a class="header" href="#1远古"><strong>1.（远古）</strong></a></h4>
+<p>西行的队伍在第三天傍晚回来了，带着死亡和绝望的气息。</p>
+<p>他们没有找到水。那条季节性的瀑布，如今只剩下光秃秃的黑色崖壁，像一具风干的骨架。一个年老的雌性和两个最虚弱的幼崽，没能撑过这次徒劳的远征，永远地倒在了干热的土地上。</p>
+<p>族群的士气降到了冰点。他们疲惫地瘫倒在洞穴里，连发出哀嚎的力气都没有了。首领格隆（Gron）坐在洞口，他那强壮的背影在夕阳下显得异常萧索。他的决策失败了，这比任何外部的挑战都更能动摇他的权威。他用粗糙的手掌抚摸着额头上的伤疤，眼神空洞地望着这片带给他荣耀，如今却要吞噬他一切的土地。</p>
+<p>就在这时，一个身影出现在地平线上。</p>
+<p>是科力（Kli）。</p>
+<p>他独自一人，从东方回来了。他的步伐虽然缓慢，但并不踉跄。他的嘴唇不再干裂，覆盖着尘土的毛发下，显露出健康的皮肤光泽。他看上去……不像一个即将渴死的人。</p>
+<p>所有人的目光都集中到了他的身上。格隆警惕地站了起来，几个雄性也挣扎着起身，摆出了防御的姿态。他们不知道科力这几天去了哪里，他的“幸存”本身，就构成了一种无声的指控，映照出他们的无能。</p>
+<p>科力没有走近洞穴。他在距离族人几十步远的地方停了下来。然后，他做了一个所有人都意想不到的动作。他将一个用巨大叶子包裹起来的东西放在地上，小心翼翼地打开。</p>
+<p>那里面是水。</p>
+<p>清澈、甘甜的水，在叶子做成的简陋容器里微微晃动，反射着夕阳金色的光芒。</p>
+<p>整个族群都骚动了起来。那水的景象，比任何食物都更具诱惑力。几只口渴难耐的幼崽发出了渴望的叫声，挣扎着想爬过去。</p>
+<p>科力又从身后解下几个用藤蔓捆绑的、奇特的管状植物。他将其中一根举起，放在嘴边，仰头喝了几口。水顺着他的嘴角流下，浸湿了他胸前的毛发。这是一个不容置疑的证明。</p>
+<p>他把这些储水的植物放在那包水的旁边，然后默默地后退了几步，示意这些是给他们的。</p>
+<p>没有人动。他们看着科力，又看看那些水，眼神里充满了怀疑、渴望和恐惧。在他们的认知里，水只存在于河里或者水洼中。这种被“带回来”的水，超出了他们的理解范畴。这是不是某种巫术？一种陷阱？</p>
+<p>最终，是奥娜（Ona）的母亲，那个在西行中失去了自己另一个孩子的年老雌性，第一个打破了僵局。她已经没有什么可以再失去了。她蹒跚地走了过去，在所有人的注视下，跪倒在地，将脸埋进了那包用叶子盛着的水里，大口大口地吞咽起来。</p>
+<p>她的举动像一个信号。所有的族人，包括格隆在内，都再也无法抑制生理的本能。他们蜂拥而上，争抢着那些水和储水植物。一时间，洞穴前只剩下贪婪的吞咽声和满足的低吼声。</p>
+<p>科力静静地站在远处看着这一切。他没有上前去分享这份“战利品”，也没有因为拯救了族群而流露出任何自得的神情。他的目光平静得像一潭深水。</p>
+<p>这几天里，他独自向东，忍受着饥渴和孤独，凭着脑海中对地形、星辰和风的模糊“计算”，最终在一处被巨大岩石遮蔽的山谷深处，找到了一个渗水的石缝。水源很小，但从未断绝。他在那里喝足了水，又花了一整天的时间，用他制作的锋利石片割下那些能储水的植物，盛满了水带了回来。</p>
+<p>他做到了。他的“预见”是正确的。</p>
+<p>当族人们喝足了水，恢复了一些体力后，他们看向科力的眼神变了。不再是单纯的厌恶，而是掺杂了更多的敬畏和不解。他不再仅仅是个“异类”，而是成了一个他们无法理解的、掌握着神秘力量的存在。</p>
+<p>但这种敬畏，并没有转化为接纳和亲近。恰恰相反，它在科力与族群之间，划下了一道更深的鸿沟。</p>
+<p>格隆走到科力面前，他没有表示感谢，也没有像对待英雄那样为他梳理毛发。他只是用一种极其复杂的眼神盯着科力，然后发出了一声低沉的、非敌非友的吼叫。那声音里有妥协，也有警告。他示意科力可以回到洞穴，但他被安排在离群体最远的一个角落。</p>
+<p>科力拯救了族群的生命，却依然没能获得一个真正的“位置”。</p>
+<p>当晚，科力躺在冰冷的石地上，听着洞穴里族人久违的、平稳的呼吸声。他知道，他找到的水源只能解一时之急，并不能长久地供应整个族群。那场大干旱的阴影，依然笼罩着这片土地。</p>
+<p>他必须带领他们，去往那个水源之地。</p>
+<p>但如何做到？如何让那个对他充满忌惮和敌意的首领，放弃自己的权威，跟随一个他完全无法理解的“疯子”？</p>
+<p>科力再次望向洞外的星空。那些闪烁的光点，既是他智慧的源泉，也是他孤独的唯一见证。他拯救了他们，但回响在他耳边的，只有无声的孤独。</p>
+<h4 id="2近未来"><a class="header" href="#2近未来"><strong>2.（近未来）</strong></a></h4>
+<p>普罗米修斯公司的南太平洋研究基地，代号“潘多拉”。</p>
+<p>当垂直起降飞行器穿过一层厚厚的、由人工气候系统制造的云雾，降落在这座私人岛屿上时，林遥（Lin Yao）感觉自己仿佛进入了一个科幻电影的场景。</p>
+<p>这里没有冰冷的钢铁和玻璃幕墙，取而代之的是与自然环境完美融合的、由白色高分子材料构建的流线型建筑群。茂盛的热带植物环绕着每一个功能区，清澈的溪流在建筑之间穿行，甚至还有几只色彩斑斓的天堂鸟在仿生树上鸣叫。一切都显得那么宁静、和谐，充满了生命力。</p>
+<p>“欢迎来到未来，林博士。”马库斯·索恩（Marcus Thorne）的声音在她身边响起，带着一丝自豪，“在这里，我们不‘对抗’自然，我们‘引导’自然。这，也是我们对‘仰望者基因’的态度。”</p>
+<p>林遥没有说话，她冷静地观察着四周。她知道，这片看似天堂的景象背后，隐藏着世界上最尖端、也可能是最危险的基因实验室。</p>
+<p>她的导师陈教授，最终还是选择留在国内，作为她在外部的“安全阀”和联络人。临行前，陈教授给了她一个伪装成项链的微型紧急信标。</p>
+<p>“记住，小遥，”老人语重心长地说，“你是在与虎谋皮。不要被他们提供的任何东西迷惑。你的任务，是揭开真相，而不是成为他们创造新世界的工具。”</p>
+<p>此刻，林遥更加深刻地理解了这句话的含义。普罗米修斯公司用这种“伊甸园”般的环境，来消解科学家们的道德戒心，让他们在不知不觉中，认同公司的理念。</p>
+<p>马库斯将她带到了分配给她的独立实验室。那是一个巨大的环形空间，中心是一个下沉式的超净工作区，四周环绕着休息室、数据分析中心和全息模拟室。她所需要的一切仪器，甚至是一些她只在理论期刊上见过的、尚未商业化的原型机，都已经在这里准备就绪。</p>
+<p>“这是您的团队，”马库斯介绍道，“来自全球各地的顶尖基因学家、生物信息学家和神经科学家。他们将完全听从您的指挥。”</p>
+<p>一群穿着白色研究服的科学家向她点头致意，他们的眼神里有好奇，也有审视。林遥知道，这些人既是她的助手，也是马库斯的“眼睛”。</p>
+<p>“那块化石呢？”林遥开门见山地问。</p>
+<p>“当然，我们最重要的‘客人’。”马库斯打了个响指。实验室中心的圆形地面无声地滑开，一个被恒温恒湿保护罩笼罩的展台缓缓升起。那块来自一百五十万年前的头骨，正静静地躺在天鹅绒的基座上，被柔和的光线照亮，像一件神圣的艺术品。</p>
+<p>“现在，林博士，”马库斯做了个“请”的手势，脸上是期待的微笑，“舞台已经为您搭好。请开始您的表演吧。”</p>
+<p>接下来的几周，林遥全身心地投入到了研究中。普罗米修斯公司提供的资源是惊人的。她利用量子计算机，在几天内就完成了之前需要数月才能完成的古DNA序列补全和修复工作。一个几乎完整的“G-Stargazer-01”基因图谱，清晰地展现在她面前。</p>
+<p>她和她的团队发现，“仰望者基因”并非一个孤立的基因，而是一个复杂的基因调控网络的核心。它像一个“总开关”，能够激活或抑制大脑中上百个与认知、记忆和情感相关的基因。</p>
+<p>更惊人的是，他们在现代人类的基因库中，也找到了这个“总开关”的“休眠”版本。在99.99%的人类个体中，它都被牢牢锁死。但在极少数的样本中——主要是那些被诊断为高功能自闭症（阿斯伯格综合征）或某些类型的精神分裂症患者，以及极少数被公认的、跨时代的天才（如从历史名人遗骸中提取的DNA样本）——这个开关，呈现出“半激活”的状态。</p>
+<p>这印证了陈教授的猜想：这个基因带来的，是天才与疯子的一体两面。</p>
+<p>一天晚上，林遥在分析数据时，接到了马库斯的视频通讯请求。</p>
+<p>“进展如何，我亲爱的首席科学家？”马库斯的声音听上去心情很好。</p>
+<p>“我们已经基本破解了它的结构和调控机制。”林遥如实回答。</p>
+<p>“太棒了！”马库斯赞叹道，“那么，下一步，就是激活它，对吗？我们可以从黑猩猩开始，或者……直接使用人工培育的人类胚胎。我们拥有世界上最先进的基因编辑技术，CRISPR-Cas9在我们的技术面前，就像石斧一样原始。”</p>
+<p>林遥的心猛地一沉。她最担心的一刻，还是来了。</p>
+<p>“现在还不行。”她冷静地说，“我们还不完全了解它的副作用。在那个古人类身上，它只是天然突变。但如果人为地、强制性地去激活它，我们无法预测会发生什么。可能会导致大脑的彻底崩溃。”</p>
+<p>“风险，总是与收益并存，林博士。”马库斯微笑着说，但眼神里没有丝毫温度，“我们来到这里，不是为了瞻前顾后。我需要看到成果。”</p>
+<p>“我明白。但科学需要严谨。”林遥没有退缩，“在进行任何生物实验之前，我需要构建一个完整的全息神经元交互模型，来模拟这个基因被激活后，大脑内部会发生的所有变化。这需要庞大的计算量和更底层的神经科学数据。”</p>
+<p>这是她早就想好的“拖延”策略。她要用一个看似合理、无法拒绝的科学步骤，来为自己争取更多的时间，去寻找这个基因背后更深层次的秘密——那个关于“代价”的秘密。</p>
+<p>马库斯沉默了片刻，似乎在权衡利弊。</p>
+<p>最终，他点了点头：“可以。我给你时间。但你要知道，我的耐心，和公司的资金一样，都不是无限的。”</p>
+<p>通讯中断了。</p>
+<p>林遥长长地舒了一口气，后背已经被冷汗浸湿。她走到那具头骨前，凝视着它。</p>
+<p>她知道，她和马库斯的博弈，已经进入了倒计时。她必须尽快找到那个远古灵魂留下的、关于“代价”的答案。因为这个答案，不仅关系到一百五十万年前一个族群的命运，更关系到一百五十万年后，整个人类的未来。</p>
+<p>而此刻，在她看不见的地方，马库斯正对着另一块屏幕，上面显示着一个代号为“亚当”的绝密项目。项目的进度条，刚刚向前推进了一格，状态更新为：</p>
+<p>“等待‘潘多拉’提供激活序列。”</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../daily/2025-08-07.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../daily/2025-08-05.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../daily/2025-08-07.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../daily/2025-08-05.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
