@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 08 Aug 2025 23:14:16 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 08 Aug 2025 23:55:11 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2025-08-09日刊]]></title>
           <link>https://ai.hubtoday.app//2025-08/2025-08-09/</link>
           <guid>https://ai.hubtoday.app//2025-08/2025-08-09/</guid>
-          <pubDate>Sat, 09 Aug 2025 07:14:14 GMT</pubDate>
+          <pubDate>Sat, 09 Aug 2025 07:55:10 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2025/8/9</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>微软将GPT-5全面接入其核心生态，新模型能根据任务复杂度自动切换。
 AI编程工具Cursor向付费用户提供GPT-5限时免费体验，并推出全新CLI工具。
 研究揭示大语言模型存在忽略中间信息的&quot;注意力盆地”缺陷，并已提出优化方法。
