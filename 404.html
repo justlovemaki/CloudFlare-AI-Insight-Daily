@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>居中单页示例</title>
+  <style>
+    /* Reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+
+    /* 主布局：使用 flex 居中 */
+    body{
+      display:flex;
+      align-items:center;           /* 垂直居中 */
+      justify-content:center;       /* 水平居中 */
+      padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      background:linear-gradient(180deg,#f7fbff,#eef6ff);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* 容器：垂直排列文案和链接 */
+    .center-card{
+      text-align:center;
+      padding:24px;
+      border-radius:14px;
+      box-shadow:0 6px 20px rgba(30,60,100,0.08);
+      background:rgba(255,255,255,0.9);
+      width:calc(100% - 40px);
+      max-width:560px;
+    }
+
+    /* 响应式标题与说明：使用 clamp 控制字体在不同屏幕大小 */
+    h1{
+      font-size:clamp(18px,4.5vw,28px);
+      margin-bottom:10px;
+      color:#0b2540;
+    }
+    p{
+      font-size:clamp(14px,3.5vw,16px);
+      color:#27486a;
+      margin-bottom:18px;
+      line-height:1.45;
+    }
+
+    /* 按钮样式的链接 */
+    .btn{
+      display:inline-block;
+      padding:12px 20px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:15px;
+      background:#2563eb;
+      color:#fff;
+      box-shadow:0 6px 18px rgba(37,99,235,0.18);
+      transition:transform .12s ease,box-shadow .12s ease,opacity .12s ease;
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn:focus{outline:3px solid rgba(37,99,235,0.18);outline-offset:3px}
+
+    /* 小屏幕时按钮撑满 */
+    @media (max-width:420px){
+      .btn{display:block;width:100%}
+    }
+  </style>
+</head>
+<body>
+  <main class="center-card" role="main">
+    <h1 id="headline">感谢您的一路相伴</h1></br>
+    <p id="subtext">本站<strong>已迁移</strong>到新的域名，请等待<strong>自动跳转</strong>...</p>
+    <p id="subtext">或点击下面的<strong>按钮</strong>，跳转到新的站点</p>
+    <p id="subtext">新网页请及时<strong>保存收藏</strong></p>
+    <p class="countdown">页面将在 <strong><span id="count">5</span></strong> 秒后自动跳转。</p>
+    <a id="cta" class="btn" href="https://ai.hubtoday.app/">前往AI资讯日报</a>
+  </main>
+
+  <script>
+   (function(){
+      // 倒计时秒数（可修改）
+      var seconds = 5;
+
+      var countEl = document.getElementById('count');
+      var cta = document.getElementById('cta');
+      var timerId = null;
+
+      // 更新显示并处理跳转
+      function startCountdown(){
+        if(!countEl || !cta) return;
+        countEl.textContent = String(seconds);
+
+        timerId = setInterval(function(){
+          seconds -= 1;
+          if(seconds <= 0){
+            clearInterval(timerId);
+            // 使用按钮上的 href 进行跳转（保留 target/rel 的行为）
+            var href = cta.getAttribute('href') || '';
+            if(!href) return;
+            // 如果按钮设置了 target="_blank"，用 window.open 否则用 location.href
+            var target = cta.getAttribute('target');
+            if(target === '_blank'){
+              window.open(href, '_blank', 'noopener');
+            } else {
+              window.location.href = href;
+            }
+          } else {
+            countEl.textContent = String(seconds);
+          }
+        }, 1000);
+      }
+
+      // 点击按钮时立即跳转并停止倒计时
+      cta.addEventListener('click', function(){
+        if(timerId) clearInterval(timerId);
+      });
+
+      // 页面可见时开始倒计时（如果用户切换标签页，倒计时会在返回后继续）
+      document.addEventListener('visibilitychange', function(){
+        if(document.visibilityState === 'visible' && timerId === null){
+          // 如果倒计时未开始（timerId 为 null 且 seconds > 0）则开始
+          if(seconds > 0) startCountdown();
+        }
+      });
+
+      // 立即开始
+      startCountdown();
+    })();
+  </script>
+</body>
+</html>
