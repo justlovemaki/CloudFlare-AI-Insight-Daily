@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 15 Aug 2025 23:14:10 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 15 Aug 2025 23:55:09 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2025-08-16日刊]]></title>
           <link>https://ai.hubtoday.app//2025-08/2025-08-16/</link>
           <guid>https://ai.hubtoday.app//2025-08/2025-08-16/</guid>
-          <pubDate>Sat, 16 Aug 2025 07:14:09 GMT</pubDate>
+          <pubDate>Sat, 16 Aug 2025 07:55:08 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2025/8/16</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>谷歌为其AI助手Gemini推出记忆功能，并全面开放文生图模型Imagen 4。
 海外AI Agent项目MuleRun通过独立虚拟机环境，实现了全能的数字级操作。
 前沿研究方面，Meta开源了视觉巨兽DINOv3，但新评测也暴露了大模型推理短板。
