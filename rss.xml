@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 24 Aug 2025 23:12:55 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 Aug 2025 23:55:11 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2025-08-25日刊]]></title>
           <link>https://ai.hubtoday.app//2025-08/2025-08-25/</link>
           <guid>https://ai.hubtoday.app//2025-08/2025-08-25/</guid>
-          <pubDate>Mon, 25 Aug 2025 07:12:54 GMT</pubDate>
+          <pubDate>Mon, 25 Aug 2025 07:55:10 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2025/8/25</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>马斯克的xAI宣布开源Grok 2.5模型，且性能更强的Grok 3即将推出。
 上海AI实验室发布OpenDataArena，旨在科学评估数据集的真实价值与效果。
 前沿研究包括了开源AI芯片TinyTPU，以及将AGI视为系统工程的新观点。
