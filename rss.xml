@@ -5,9 +5,18 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 22 Jan 2026 23:55:13 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Jan 2026 23:16:35 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-01-24日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-01/2026-01-24/</link>
+          <guid>https://ai.hubtoday.app//2026-01/2026-01-24/</guid>
+          <pubDate>Sat, 24 Jan 2026 07:16:34 GMT</pubDate>
+          <content:encoded><![CDATA[<h3>产品与功能更新</h3><ol><li>DeepMind发布D4RT，5秒重建一分钟视频的4D场景，比现有方案快300倍。</li><li>OpenAI升级Mac端Atlas浏览器，新增标签页分组和iCloud密码支持。</li><li>字节TRAE IDE更新MCP工具包，十款Server覆盖开发全流程。</li></ol><h3>前沿研究</h3><ol><li>英伟达工程师开源VibeTensor，AI零人工生成4.7万行深度学习代码。</li><li>CGS-GAN论文解决3D人头多视角一致性问题，支持2048²分辨率。</li><li>Event-VStream框架将视频转为事件序列，2小时长视频推理有突破。</li><li>PyraTok提出金字塔视频分词架构，支持4K/8K分辨率零样本分割。</li></ol><h3>行业展望与社会影响</h3><p>......</p><p><em>[剩余内容已省略]</em></p></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+          <description><![CDATA[产品与功能更新 DeepMind发布D4RT，5秒重建一分钟视频的4D场景，比现有方案快300倍。 OpenAI升级Mac端Atlas浏览器，新增标签页分组和iCloud密码支持。 字节TRAE IDE更新MCP工具包，十款Server覆盖开发全流程。 前沿研究 英伟达工程师开源VibeTensor，AI零人工生成4.7万行深度学习代码。 CGS-GAN论文解决3D人头多视角一致性问题，支持204]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-01-23日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-23/</link>
@@ -60,15 +69,6 @@
           <pubDate>Sun, 18 Jan 2026 07:55:11 GMT</pubDate>
           <content:encoded><![CDATA[<h3>产品与功能更新</h3><ol><li>OpenAI 发布通用 API 标准，统一各大模型接口。</li></ol><h3>前沿研究</h3><ol><li>最新研究 对比 RAG 模式，指出 Agentic 方案成本较高。</li></ol><h3>开源TOP项目</h3><ol><li>Eigent 发布开源协同桌面，支持统一处理协作任务。</li><li>SpotiFLAC 提供无损音乐下载，无需账号即可使用。</li></ol><h3>社媒分享</h3><ol><li>Dan Koe 分享写作技巧，利用 AI 辅助构建深度内容。</li><li>开发者 购买自定义域名，能加速 Supabase 国内访问。</li></ol></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或直接扫码进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun-ex2.jpg" alt="进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
           <description><![CDATA[产品与功能更新 OpenAI 发布通用 API 标准，统一各大模型接口。 前沿研究 最新研究 对比 RAG 模式，指出 Agentic 方案成本较高。 开源TOP项目 Eigent 发布开源协同桌面，支持统一处理协作任务。 SpotiFLAC 提供无损音乐下载，无需账号即可使用。 社媒分享 Dan Koe 分享写作技巧，利用 AI 辅助构建深度内容。 开发者 购买自定义域名，能加速 Supabas]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-01-17日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-01/2026-01-17/</link>
-          <guid>https://ai.hubtoday.app//2026-01/2026-01-17/</guid>
-          <pubDate>Sat, 17 Jan 2026 07:55:12 GMT</pubDate>
-          <content:encoded><![CDATA[<h3>产品与功能更新</h3><ol><li>Black Forest Labs 发布亚秒级生成模型，画质出色。</li><li>OpenAI 推出最强编程模型，专为构建复杂系统设计。</li><li>腾讯 内测互动剧本杀小程序，用户可推动剧情走向。</li><li>阶跃星辰 开源实时语音模型，支持边对话边思考。</li></ol><h3>前沿研究</h3><ol><li>MemGovern 框架让 AI 学习经验，提升 Bug 修复能力。</li><li>Cursor 团队揭秘工程指南，通过多路检测减少误报。</li><li>新研究 指出机器遗忘技术难以移除数据投毒攻击。</li><li>研究 发现推理语言会显著影响 AI 的道德判断。</li></ol><h3>行业展望与社会影响</h3><ol><li>物理学家 预言 AI 将在三年内终结人类科研。</li><li>支付宝 发布首个 AI 商业协议，打通跨平台支付。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或直接扫码进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun-ex2.jpg" alt="进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-          <description><![CDATA[产品与功能更新 Black Forest Labs 发布亚秒级生成模型，画质出色。 OpenAI 推出最强编程模型，专为构建复杂系统设计。 腾讯 内测互动剧本杀小程序，用户可推动剧情走向。 阶跃星辰 开源实时语音模型，支持边对话边思考。 前沿研究 MemGovern 框架让 AI 学习经验，提升 Bug 修复能力。 Cursor 团队揭秘工程指南，通过多路检测减少误报。 新研究 指出机器遗忘技术难]]></description>
         </item>
       
   </channel>
