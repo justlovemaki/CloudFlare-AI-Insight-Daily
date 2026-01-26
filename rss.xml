@@ -5,9 +5,18 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 25 Jan 2026 23:55:12 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jan 2026 23:17:03 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-01-27日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-01/2026-01-27/</link>
+          <guid>https://ai.hubtoday.app//2026-01/2026-01-27/</guid>
+          <pubDate>Tue, 27 Jan 2026 07:17:02 GMT</pubDate>
+          <content:encoded><![CDATA[<h3>产品与功能更新</h3><ol><li>JetBrains IDE 原生支持 OpenAI Codex，可绑定账户免费使用。</li><li>腾讯发布混元图像3.0，80B参数支持智能修图和多图融合。</li><li>Meta 全球关停青少年 AI 角色功能，加强年龄识别拦截。</li></ol><hr><h3>前沿研究</h3><ol><li>北大中科大发布多模态大模型 Token 压缩技术综述。</li><li>PRACTIQ 构建首个带歧义问题的对话式 Text-to-SQL 数据集。</li><li>BPIM 框架提升无人机场景小目标检测效果。</li></ol><hr><h3>行业展望与社会影响</h3><ol><li>北京十五五规划明确推动 AI 产业规模迈向万亿级。</li><li>港科大开源科创板 AI 交易竞技平台，GPT-5 表现领先。</li><li>马化腾年会表态腾讯全力押注 AI，压力给到元宝团队。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+          <description><![CDATA[产品与功能更新 JetBrains IDE 原生支持 OpenAI Codex，可绑定账户免费使用。 腾讯发布混元图像3.0，80B参数支持智能修图和多图融合。 Meta 全球关停青少年 AI 角色功能，加强年龄识别拦截。 前沿研究 北大中科大发布多模态大模型 Token 压缩技术综述。 PRACTIQ 构建首个带歧义问题的对话式 Text-to-SQL 数据集。 BPIM 框架提升无人机场景小目]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-01-26日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-26/</link>
@@ -60,15 +69,6 @@
           <pubDate>Wed, 21 Jan 2026 07:55:12 GMT</pubDate>
           <content:encoded><![CDATA[<h3>产品与功能更新</h3><ol><li>MiniMax 发布桌面端 Agent 2.0，支持读取本地文件</li><li>谷歌 Gemini 新增&quot;立即回答&quot;按钮，可跳过深度思考</li><li>昆仑万维 推出零基础设计工具 Skywork Design Agent</li></ol><hr><h3>前沿研究</h3><ol><li>谷歌 发现 DeepSeek 推理时会自发分裂多个角色讨论</li><li>VIGA 实现单张图片重建3D场景，性能提升35%</li><li>MHA2MLA-VLM 用低秩近似压缩视觉语言模型缓存</li><li>HIMVH 模仿海马体结构，金融反欺诈效果提升6.42%</li></ol><hr><h3>行业展望与社会影响</h3><ol><li>马斯克 起诉 OpenAI 索赔9300亿，指控其背弃非营利初衷</li><li>AI服务器 出货量增长28.3%，自研芯片占比升至27.8%</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
           <description><![CDATA[产品与功能更新 MiniMax 发布桌面端 Agent 2.0，支持读取本地文件 谷歌 Gemini 新增&quot;立即回答&quot;按钮，可跳过深度思考 昆仑万维 推出零基础设计工具 Skywork Design Agent 前沿研究 谷歌 发现 DeepSeek 推理时会自发分裂多个角色讨论 VIGA 实现单张图片重建3D场景，性能提升35% MHA2MLA-VLM 用低秩近似压缩视觉语言]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-01-20日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-01/2026-01-20/</link>
-          <guid>https://ai.hubtoday.app//2026-01/2026-01-20/</guid>
-          <pubDate>Tue, 20 Jan 2026 07:55:13 GMT</pubDate>
-          <content:encoded><![CDATA[<h3>产品与功能更新</h3><ol><li>扣子2.0上线，新增Agent技能系统和长期计划功能</li><li>OpenAI推出8美元ChatGPT Go订阅，免费版将引入广告</li><li>英伟达发布PersonaPlex语音模型，支持实时打断和边说边听</li><li>阿里健康发布AI助手&quot;氢离子&quot;，主打低幻觉率和答案溯源</li><li>小米运动健康接入蚂蚁阿福AI助手，月活达3000万</li></ol><hr><h3>前沿研究</h3><ol><li>DeepSeek mHC被复现，17亿参数下实现10924倍信号放大</li><li>Co-Evolving Agents论文提出利用失败轨迹优化训练的新方法</li><li>Medical SAM3发布，覆盖10种医学成像模态的分割模型</li></ol><hr><h3>行业展望与社会影响</h3><ol><li>OpenAI年烧钱超80亿美元，ChatGPT将引入广告变现</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-          <description><![CDATA[产品与功能更新 扣子2.0上线，新增Agent技能系统和长期计划功能 OpenAI推出8美元ChatGPT Go订阅，免费版将引入广告 英伟达发布PersonaPlex语音模型，支持实时打断和边说边听 阿里健康发布AI助手&quot;氢离子&quot;，主打低幻觉率和答案溯源 小米运动健康接入蚂蚁阿福AI助手，月活达3000万 前沿研究 DeepSeek mHC被复现，17亿参数下实现10924倍]]></description>
         </item>
       
   </channel>
