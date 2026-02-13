@@ -5,9 +5,18 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Feb 2026 23:55:13 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Feb 2026 03:48:00 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-02-13日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-02/2026-02-13/</link>
+          <guid>https://ai.hubtoday.app//2026-02/2026-02-13/</guid>
+          <pubDate>Fri, 13 Feb 2026 11:47:59 GMT</pubDate>
+          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>小米发布开源机器人大模型，支持在消费级显卡流畅运行。</li><li>MiniMax发布M2.5编程模型，专为Agent场景设计且吞吐量高。</li><li>GLM-5模型发布，具备强大的长时间编程和复杂任务处理能力。</li><li>高德发布机器人基座模型ABot，能听懂复杂指令并执行任务。</li><li>字节跳动发布视频模型Seedance 2.0，支持音画一体生成与编辑。</li><li>DeepMind发布Gemini 3模型，数学推理和编程能力刷新纪录。</li><li>OpenAI发布实时编程模型Codex-Spark，提供极速交互体验。</li></ol><h3>前沿研究</h3><ol><li>研究人员提出强化推理策略，无需重训即可大幅提升模型准确率。</li><li>研究人员提出新评估方法，解决真实图像修复质量难以评价的问题。</li></ol><h3>行业展望与社会影响</h3><p>......</p><p><em>[剩余内容已省略]</em></p></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 小米发布开源机器人大模型，支持在消费级显卡流畅运行。 MiniMax发布M2.5编程模型，专为Agent场景设计且吞吐量高。 GLM-5模型发布，具备强大的长时间编程和复杂任务处理能力。 高德发布机器人基座模型ABot，能听懂复杂指令并执行任务。 字节跳动发布视频模型Seedance 2.0，支持音画一体生成与编辑。 Deep]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-02-12日刊]]></title>
           <link>https://ai.hubtoday.app//2026-02/2026-02-12/</link>
@@ -51,15 +60,6 @@
           <pubDate>Sun, 08 Feb 2026 07:55:14 GMT</pubDate>
           <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>Waymo 和 DeepMind 推出世界模型，能生成逼真3D环境模拟极端场景。</li><li>面壁智能 发布松果派开发板，集成275TOPS算力支持离线大模型。</li><li>千问APP 30亿免单活动5小时破500万单，登顶苹果免费榜第一。</li><li>火山引擎 推出AgentKit方案，降低70%Token消耗解决安全漏洞问题。</li></ol><h3>前沿研究</h3><ol><li>GenArena 提出视觉生成评估新方法，准确率提升超20%。</li><li>OmniMoE 引入向量级原子专家，推理速度提升10.9倍。</li></ol><h3>行业展望与社会影响</h3><ol><li>苏炜杰 获统计学最高荣誉考普斯奖，时隔14年华人再获此奖。</li><li>高德鹰眼系统 升级护航春运，能提前识别24类潜在风险。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
           <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 Waymo 和 DeepMind 推出世界模型，能生成逼真3D环境模拟极端场景。 面壁智能 发布松果派开发板，集成275TOPS算力支持离线大模型。 千问APP 30亿免单活动5小时破500万单，登顶苹果免费榜第一。 火山引擎 推出AgentKit方案，降低70%Token消耗解决安全漏洞问题。 前沿研究 GenArena 提]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-02-06日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-02/2026-02-06/</link>
-          <guid>https://ai.hubtoday.app//2026-02/2026-02-06/</guid>
-          <pubDate>Fri, 06 Feb 2026 07:55:12 GMT</pubDate>
-          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>可灵AI发布3.0版本，支持智能分镜与4K视频生成。</li><li>腾讯游戏升级寒假防沉迷，引入AI管控与个性化周报。</li><li>天工上线桌面版AI助手，具备系统级文件处理能力。</li></ol><h3>前沿研究</h3><ol><li>蚂蚁灵波开源四款具身智能模型，探索物理世界交互。</li><li>大模型通过分析上下文与用户画像，精准判断政治立场。</li><li>PromptSplit框架检测模型分歧，定位导致差异的提示词。</li></ol><h3>行业展望与社会影响</h3><ol><li>谷歌成为苹果首选云服务商，Gemini赋能苹果新模型。</li><li>我国生成式AI用户突破六亿，半数网民正在使用产品。</li><li>风投a16z筹集17亿美元投向AI基建，掌控未来话语权。</li><li>微软推出AI内容交易平台，解决数据版权争议并提供收益。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 可灵AI发布3.0版本，支持智能分镜与4K视频生成。 腾讯游戏升级寒假防沉迷，引入AI管控与个性化周报。 天工上线桌面版AI助手，具备系统级文件处理能力。 前沿研究 蚂蚁灵波开源四款具身智能模型，探索物理世界交互。 大模型通过分析上下文与用户画像，精准判断政治立场。 PromptSplit框架检测模型分歧，定位导致差异的提示词]]></description>
         </item>
       
   </channel>
