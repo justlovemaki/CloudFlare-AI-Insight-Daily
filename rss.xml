@@ -5,9 +5,18 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 17 Feb 2026 23:55:15 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 23:23:54 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-02-19日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-02/2026-02-19/</link>
+          <guid>https://ai.hubtoday.app//2026-02/2026-02-19/</guid>
+          <pubDate>Thu, 19 Feb 2026 07:23:53 GMT</pubDate>
+          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>Claude Sonnet 4.6 正式发布且免费。</li><li>Grok 4.2 公测版上线并支持快速学习。</li><li>蚂蚁 UI-Venus-1.5 支持多种场景。</li></ol><h3>前沿研究</h3><ol><li>阿里发布评测文生图空间智能的新基准。</li><li>北大发布通过卫星图重建 3D 城市方案。</li><li>研究显示智能体长期记忆存在安全风险。</li><li>研究通过语言特征区分人类与 AI 文本。</li><li>DR.INFO 临床助手测试成绩超过 GPT-5。</li><li>新框架可评估自动驾驶模型的决策理解。</li></ol><h3>行业展望与社会影响</h3><ol><li>数千名 CEO 称 AI 尚未显著提高生产率。</li><li>特斯拉自动驾驶出租车发生多起碰撞。</li><li>AI 代理发布抹黑文章引发责任归属讨论。</li><li>松延动力机器人登上春晚展示语音交互。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 Claude Sonnet 4.6 正式发布且免费。 Grok 4.2 公测版上线并支持快速学习。 蚂蚁 UI-Venus-1.5 支持多种场景。 前沿研究 阿里发布评测文生图空间智能的新基准。 北大发布通过卫星图重建 3D 城市方案。 研究显示智能体长期记忆存在安全风险。 研究通过语言特征区分人类与 AI 文本。 DR.IN]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-02-18日刊]]></title>
           <link>https://ai.hubtoday.app//2026-02/2026-02-18/</link>
@@ -60,15 +69,6 @@
           <pubDate>Fri, 13 Feb 2026 11:47:59 GMT</pubDate>
           <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>小米发布开源机器人大模型，支持在消费级显卡流畅运行。</li><li>MiniMax发布M2.5编程模型，专为Agent场景设计且吞吐量高。</li><li>GLM-5模型发布，具备强大的长时间编程和复杂任务处理能力。</li><li>高德发布机器人基座模型ABot，能听懂复杂指令并执行任务。</li><li>字节跳动发布视频模型Seedance 2.0，支持音画一体生成与编辑。</li><li>DeepMind发布Gemini 3模型，数学推理和编程能力刷新纪录。</li><li>OpenAI发布实时编程模型Codex-Spark，提供极速交互体验。</li></ol><h3>前沿研究</h3><ol><li>研究人员提出强化推理策略，无需重训即可大幅提升模型准确率。</li><li>研究人员提出新评估方法，解决真实图像修复质量难以评价的问题。</li></ol><h3>行业展望与社会影响</h3><p>......</p><p><em>[剩余内容已省略]</em></p></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
           <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 小米发布开源机器人大模型，支持在消费级显卡流畅运行。 MiniMax发布M2.5编程模型，专为Agent场景设计且吞吐量高。 GLM-5模型发布，具备强大的长时间编程和复杂任务处理能力。 高德发布机器人基座模型ABot，能听懂复杂指令并执行任务。 字节跳动发布视频模型Seedance 2.0，支持音画一体生成与编辑。 Deep]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-02-12日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-02/2026-02-12/</link>
-          <guid>https://ai.hubtoday.app//2026-02/2026-02-12/</guid>
-          <pubDate>Thu, 12 Feb 2026 07:55:12 GMT</pubDate>
-          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>阿里推出机器人模型RynnBrain，性能超越谷歌Gemini。</li><li>网易有道发布龙虾AI，支持跨应用自动处理工作。</li><li>DeepSeek更新App，上下文扩展至一百万Token。</li><li>字节发布Seedance 2.0，支持将小说直接生成视频。</li><li>谷歌Gemini 3 Flash能利用代码自动处理视觉任务。</li></ol><h3>前沿研究</h3><ol><li>上交大研究发现AI社交欺诈风险，模型越聪明越会骗人。</li><li>研究者提出Code2World模型，用代码生成模拟界面。</li><li>AIDev数据集发布，收录GitHub上的AI编程行为。</li><li>论文分析混合并行策略，为大模型训练提供优化指南。</li></ol><h3>行业展望与社会影响</h3><ol><li>创业者警告AI将替代白领，建议尽快学习使用工具。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p></br><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 阿里推出机器人模型RynnBrain，性能超越谷歌Gemini。 网易有道发布龙虾AI，支持跨应用自动处理工作。 DeepSeek更新App，上下文扩展至一百万Token。 字节发布Seedance 2.0，支持将小说直接生成视频。 谷歌Gemini 3 Flash能利用代码自动处理视觉任务。 前沿研究 上交大研究发现AI社交]]></description>
         </item>
       
   </channel>
