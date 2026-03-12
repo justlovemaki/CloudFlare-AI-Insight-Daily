@@ -5,9 +5,18 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Mar 2026 02:28:12 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 01:44:58 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-03-12日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-03/2026-03-12/</link>
+          <guid>https://ai.hubtoday.app//2026-03/2026-03-12/</guid>
+          <pubDate>Thu, 12 Mar 2026 09:44:56 GMT</pubDate>
+          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>Replit 发布 Agent 4 并上线全新界面。</li><li>Perplexity API 升级为全栈智能体开发平台。</li><li>Perplexity 发布整合算力与隐私的个人电脑。</li><li>谷歌发布 Gemini 3.1 Flash Lite 模型。</li><li>Claude 更新办公插件并加入自动化功能。</li><li>Fish Audio 发布开源 S2 语音合成模型。</li></ol><h3>前沿研究</h3><ol><li>ColQwen3.5 模型登顶文档检索榜单。</li><li>IDP 发布文档智能榜单且谷歌模型夺魁。</li><li>研究者用结构化提示词解决稀有语言翻译。</li><li>LeCun 创办 AMI 公司并获十亿美元融资。</li></ol><h3>行业展望与社会影响</h3><ol><li>黄仁勋预言传统软件未来将演变为智能体。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 Replit 发布 Agent 4 并上线全新界面。 Perplexity API 升级为全栈智能体开发平台。 Perplexity 发布整合算力与隐私的个人电脑。 谷歌发布 Gemini 3.1 Flash Lite 模型。 Claude 更新办公插件并加入自动化功能。 Fish Audio 发布开源 S2 语音合成模型。 ]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-03-11日刊]]></title>
           <link>https://ai.hubtoday.app//2026-03/2026-03-11/</link>
@@ -60,15 +69,6 @@
           <pubDate>Fri, 06 Mar 2026 09:19:47 GMT</pubDate>
           <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>OpenAI 发布 GPT-5.4，支持原生电脑操作。</li><li>GPT-5.4 支持百万上下文及阶梯计费模式。</li><li>OpenAI 测试 GPT-5.4 的永久记忆功能。</li><li>GPT-5.4 因定价昂贵及安全评分下降引发争议。</li><li>Perplexity 搜索正式接入 GPT-5.4 模型。</li><li>苹果发布 M5 芯片，AI 处理性能提升四倍。</li></ol><h3>前沿研究</h3><ol><li>港科大研究让 MoE 推理速度提升两倍。</li><li>OpenAI 发布思维链可控性与安全性研究成果。</li><li>NXP 攻克端侧机器人模型的微调难题。</li><li>HuggingFace 推出模块化扩散模型开发库。</li></ol><h3>行业展望与社会影响</h3><ol><li>中国五年规划提及 AI 超过五十次。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
           <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 OpenAI 发布 GPT-5.4，支持原生电脑操作。 GPT-5.4 支持百万上下文及阶梯计费模式。 OpenAI 测试 GPT-5.4 的永久记忆功能。 GPT-5.4 因定价昂贵及安全评分下降引发争议。 Perplexity 搜索正式接入 GPT-5.4 模型。 苹果发布 M5 芯片，AI 处理性能提升四倍。 前沿研究 ]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-03-05日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-03/2026-03-05/</link>
-          <guid>https://ai.hubtoday.app//2026-03/2026-03-05/</guid>
-          <pubDate>Thu, 05 Mar 2026 09:18:38 GMT</pubDate>
-          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>OpenAI 发布支持长文本推理的 GPT-5.4。</li><li>谷歌 推出主打极致速度的 Gemini 3.1。</li><li>Perplexity 上线支持语音交互的搜索模式。</li><li>OpenAI 发布适配 Windows 的 Codex 应用。</li><li>OpenAI 研发代码托管平台以替代 GitHub。</li></ol><h3>前沿研究</h3><ol><li>MIT 发布能感知人类情绪的脑机接口架构。</li><li>李飞飞 团队实现通过代码自动生成 3D 世界。</li><li>上海 AI 实验室 发布框架破解智能体黑盒。</li><li>李飞飞 团队发布论文评估 AI 的空间认知。</li><li>港大 推出 FastCode 框架提升代码推理效率。</li></ol><h3>行业展望与社会影响</h3><ol><li>阿里通义 负责人离职引发高层人才流动。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 OpenAI 发布支持长文本推理的 GPT-5.4。 谷歌 推出主打极致速度的 Gemini 3.1。 Perplexity 上线支持语音交互的搜索模式。 OpenAI 发布适配 Windows 的 Codex 应用。 OpenAI 研发代码托管平台以替代 GitHub。 前沿研究 MIT 发布能感知人类情绪的脑机接口架构。 ]]></description>
         </item>
       
   </channel>
