@@ -5,9 +5,18 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 16 Mar 2026 01:39:44 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 01:53:37 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-03-17日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-03/2026-03-17/</link>
+          <guid>https://ai.hubtoday.app//2026-03/2026-03-17/</guid>
+          <pubDate>Tue, 17 Mar 2026 09:53:36 GMT</pubDate>
+          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>英伟达 发售GB300桌面超算。</li><li>英伟达 推出DLSS 5画面技术。</li><li>智谱 发布龙虾大模型。</li><li>OpenAI 将Sora接入ChatGPT。</li></ol><h3>前沿研究</h3><ol><li>英伟达 发布医疗机器人数据集。</li><li>中科院 研发DeepRead阅读框架。</li><li>华虹 研发AI芯片制造新技术。</li><li>联电 将在年内量产光子芯片。</li><li>小米 团队发布系统降低算力成本。</li></ol><h3>行业展望与社会影响</h3><ol><li>大英百科全书 起诉OpenAI侵权。</li><li>彼得·蒂尔 抨击欧洲AI监管。</li><li>特朗普 叫停佛州AI监管计划。</li><li>IBM 发布年报专注企业AI转型。</li><li>某教授 计划用AI替代研究生。</li><li>315晚会 揭露AI投毒黑产。</li></ol><h3>开源TOP项目</h3><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 英伟达 发售GB300桌面超算。 英伟达 推出DLSS 5画面技术。 智谱 发布龙虾大模型。 OpenAI 将Sora接入ChatGPT。 前沿研究 英伟达 发布医疗机器人数据集。 中科院 研发DeepRead阅读框架。 华虹 研发AI芯片制造新技术。 联电 将在年内量产光子芯片。 小米 团队发布系统降低算力成本。 行业展望与]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-03-16日刊]]></title>
           <link>https://ai.hubtoday.app//2026-03/2026-03-16/</link>
@@ -60,15 +69,6 @@
           <pubDate>Wed, 11 Mar 2026 10:28:11 GMT</pubDate>
           <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>英伟达 向AI公司投资五百亿美元。</li><li>Figure机器人 实现自主收拾客厅。</li><li>谷歌 发布首款全模态嵌入模型。</li><li>亚马逊 上线医疗AI助手功能。</li></ol><h3>前沿研究</h3><ol><li>开发者 用两块显卡提升模型性能。</li><li>OpenAI 增强模型指令防御能力。</li><li>颜水成团队 发布多模态统一模型。</li><li>学界 讨论大模型能否替代经典理论。</li><li>研究者 提出满足AI偏好提升安全。</li></ol><h3>行业展望与社会影响</h3><ol><li>LeCun 创办公司获十亿美元融资。</li><li>OpenAI 收购开源安全评测公司。</li><li>美参议院 批准官方使用AI机器人。</li><li>Meta 收购AI代理社交平台。</li></ol><h3>开源TOP项目</h3><ol><li>MiniMax 开源高性能模型权重。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
           <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 英伟达 向AI公司投资五百亿美元。 Figure机器人 实现自主收拾客厅。 谷歌 发布首款全模态嵌入模型。 亚马逊 上线医疗AI助手功能。 前沿研究 开发者 用两块显卡提升模型性能。 OpenAI 增强模型指令防御能力。 颜水成团队 发布多模态统一模型。 学界 讨论大模型能否替代经典理论。 研究者 提出满足AI偏好提升安全。 ]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-03-10日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-03/2026-03-10/</link>
-          <guid>https://ai.hubtoday.app//2026-03/2026-03-10/</guid>
-          <pubDate>Tue, 10 Mar 2026 09:34:08 GMT</pubDate>
-          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>微软 发布多模态推理模型Phi-4</li><li>Anthropic与xAI 发布自动化功能与语音接口</li><li>Cursor 宣布转向自研编程模型路线</li><li>荣耀与阿里 发布新型智能体基础模型</li><li>腾讯 推出视觉语言模型Penguin-VL</li></ol><h3>前沿研究</h3><ol><li>港科大 研发开源统一音频生成模型</li><li>科学家 实现首个果蝇全脑数字化上传</li><li>Claude 破解高德纳三十年数学难题</li><li>Claude 破解苹果M4芯片隐藏算力</li></ol><h3>行业展望与社会影响</h3><ol><li>英伟达 发布2026年AI产业现状报告</li><li>a16z 发布三月百大AI消费应用榜单</li><li>Netflix 全资收购阿弗莱克AI影业</li><li>Gartner 预测全球AI支出将达2.5万亿</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 微软 发布多模态推理模型Phi-4 Anthropic与xAI 发布自动化功能与语音接口 Cursor 宣布转向自研编程模型路线 荣耀与阿里 发布新型智能体基础模型 腾讯 推出视觉语言模型Penguin-VL 前沿研究 港科大 研发开源统一音频生成模型 科学家 实现首个果蝇全脑数字化上传 Claude 破解高德纳三十年数学难题]]></description>
         </item>
       
   </channel>
