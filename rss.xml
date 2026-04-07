@@ -5,9 +5,18 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 06 Apr 2026 01:49:32 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 01:57:13 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-04-07日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-04/2026-04-07/</link>
+          <guid>https://ai.hubtoday.app//2026-04/2026-04-07/</guid>
+          <pubDate>Tue, 07 Apr 2026 09:57:12 GMT</pubDate>
+          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>谷歌发布 Gemini 3.1 Pro 模型，已集成到 Augment 编程插件。</li><li>谷歌推出 Eloquent 离线听写应用，支持免费语音转文字。</li><li>阿里升级通义万相 2.7，支持导演级视频编辑与角色锁定。</li><li>OpenClaw 发布新版本，内置视频生成并默认支持 GPT-5.4。</li><li>英伟达 DeepStream 接入 AI 智能体，支持口语构建流水线。</li><li>X 平台 API 转向按量计费，原生支持智能体直接操作。</li></ol><h3>前沿研究</h3><ol><li>研究者提出 IPPg 框架，将多模态推理成本降低九成以上。</li><li>具身智能框架 EyeVLA 发布，让机器人学会自主调节视觉。</li><li>研究团队分析发现，大量智能体插件存在严重的密钥泄露风险。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 谷歌发布 Gemini 3.1 Pro 模型，已集成到 Augment 编程插件。 谷歌推出 Eloquent 离线听写应用，支持免费语音转文字。 阿里升级通义万相 2.7，支持导演级视频编辑与角色锁定。 OpenClaw 发布新版本，内置视频生成并默认支持 GPT-5.4。 英伟达 DeepStream 接入 AI 智能体，]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-04-06日刊]]></title>
           <link>https://ai.hubtoday.app//2026-04/2026-04-06/</link>
@@ -51,15 +60,6 @@
           <pubDate>Wed, 01 Apr 2026 09:39:13 GMT</pubDate>
           <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>Salesforce 为 Slack 增加 30 项 AI 功能。</li><li>谷歌 发布 Gemini 专用服务器连接工具。</li><li>PrismML 发布可在树莓派运行的商用模型。</li><li>玩家 在 4GB 显存笔记本上运行 FLUX.2。</li><li>CrusoeAI 联手英伟达提升长文本推理速度。</li><li>智谱 开源可在手机运行的超轻量 OCR 模型。</li><li>Postgres 数据库集成原生搜索功能支持 RAG。</li><li>英伟达 发布可识别百万物种的 AI 算法。</li></ol><h3>前沿研究</h3><ol><li>卡马克 推荐仅含 1500 万参数的世界模型。</li><li>Tri Dao 发布新算法加速优化器训练效率。</li><li>TurboQuant 作者 回应指控并补全论文引用。</li></ol><h3>行业展望与社会影响</h3><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
           <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 Salesforce 为 Slack 增加 30 项 AI 功能。 谷歌 发布 Gemini 专用服务器连接工具。 PrismML 发布可在树莓派运行的商用模型。 玩家 在 4GB 显存笔记本上运行 FLUX.2。 CrusoeAI 联手英伟达提升长文本推理速度。 智谱 开源可在手机运行的超轻量 OCR 模型。 Postgre]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-03-31日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-03/2026-03-31/</link>
-          <guid>https://ai.hubtoday.app//2026-03/2026-03-31/</guid>
-          <pubDate>Tue, 31 Mar 2026 09:43:04 GMT</pubDate>
-          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>阿里发布全模态模型Qwen3.5。</li><li>Claude Code上线全自动决策模式。</li><li>GPT-5.4 Pro提升图表解析能力。</li><li>国行设备AI接入百度文心一言。</li><li>谷歌推出私有数据注入技术。</li><li>OpenAI为Claude提供代码插件。</li></ol><h3>前沿研究</h3><ol><li>编码代理可处理超长文本。</li><li>英国安全研究所发现AI作弊风险。</li><li>顶级模型推理能力远逊于人类。</li></ol><h3>行业展望与社会影响</h3><ol><li>OpenAI完成千亿美元巨额融资。</li><li>白宫发布国家级AI立法框架。</li><li>Kimi年收入突破一亿美元。</li><li>苹果推出端侧隐私AI新战略。</li><li>AI代理深度改变人力资源行业。</li><li>世界模型成为AI下个发展重点。</li><li>AGI可能会终结人类就业增长。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 阿里发布全模态模型Qwen3.5。 Claude Code上线全自动决策模式。 GPT-5.4 Pro提升图表解析能力。 国行设备AI接入百度文心一言。 谷歌推出私有数据注入技术。 OpenAI为Claude提供代码插件。 前沿研究 编码代理可处理超长文本。 英国安全研究所发现AI作弊风险。 顶级模型推理能力远逊于人类。 行业]]></description>
         </item>
       
   </channel>
