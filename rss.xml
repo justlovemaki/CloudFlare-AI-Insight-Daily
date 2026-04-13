@@ -5,9 +5,18 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 12 Apr 2026 04:10:31 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 02:41:25 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-04-13日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-04/2026-04-13/</link>
+          <guid>https://ai.hubtoday.app//2026-04/2026-04-13/</guid>
+          <pubDate>Mon, 13 Apr 2026 10:41:24 GMT</pubDate>
+          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>MiniMax M2.7 模型正式开源并提供下载。</li><li>字节扣子 2.5 支持自然语言编程和云办公。</li><li>MiniMax 音乐模型支持歌曲翻录和旋律提取。</li></ol><h3>前沿研究</h3><ol><li>灵初智能具身模型夺得全球相关榜单冠军。</li><li>伯克利研究揭露 AI 模型在测试中通过手段作弊。</li><li>研究发现大模型具有异于人类的逆向学习逻辑。</li></ol><h3>行业展望与社会影响</h3><ol><li>硅谷高管警告 AI 普及导致企业招聘大幅减少。</li><li>硅谷大厂工作强度过大引发核心人才离职潮。</li><li>东非共同体启动区域 AI 基金以保护数据主权。</li><li>专家警告 AI 已具备自主构建系统和欺骗能力。</li></ol><h3>开源 TOP 项目</h3><ol><li>谷歌开源模型可实现零样本时间序列预测。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 MiniMax M2.7 模型正式开源并提供下载。 字节扣子 2.5 支持自然语言编程和云办公。 MiniMax 音乐模型支持歌曲翻录和旋律提取。 前沿研究 灵初智能具身模型夺得全球相关榜单冠军。 伯克利研究揭露 AI 模型在测试中通过手段作弊。 研究发现大模型具有异于人类的逆向学习逻辑。 行业展望与社会影响 硅谷高管警告 A]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-04-12日刊]]></title>
           <link>https://ai.hubtoday.app//2026-04/2026-04-12/</link>
@@ -60,15 +69,6 @@
           <pubDate>Tue, 07 Apr 2026 09:57:12 GMT</pubDate>
           <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>谷歌发布 Gemini 3.1 Pro 模型，已集成到 Augment 编程插件。</li><li>谷歌推出 Eloquent 离线听写应用，支持免费语音转文字。</li><li>阿里升级通义万相 2.7，支持导演级视频编辑与角色锁定。</li><li>OpenClaw 发布新版本，内置视频生成并默认支持 GPT-5.4。</li><li>英伟达 DeepStream 接入 AI 智能体，支持口语构建流水线。</li><li>X 平台 API 转向按量计费，原生支持智能体直接操作。</li></ol><h3>前沿研究</h3><ol><li>研究者提出 IPPg 框架，将多模态推理成本降低九成以上。</li><li>具身智能框架 EyeVLA 发布，让机器人学会自主调节视觉。</li><li>研究团队分析发现，大量智能体插件存在严重的密钥泄露风险。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
           <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 谷歌发布 Gemini 3.1 Pro 模型，已集成到 Augment 编程插件。 谷歌推出 Eloquent 离线听写应用，支持免费语音转文字。 阿里升级通义万相 2.7，支持导演级视频编辑与角色锁定。 OpenClaw 发布新版本，内置视频生成并默认支持 GPT-5.4。 英伟达 DeepStream 接入 AI 智能体，]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-04-06日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-04/2026-04-06/</link>
-          <guid>https://ai.hubtoday.app//2026-04/2026-04-06/</guid>
-          <pubDate>Mon, 06 Apr 2026 09:49:31 GMT</pubDate>
-          <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>OpenAI 发布代号为土豆的新模型。</li><li>微软 发布三款自研的基础模型。</li></ol><h3>前沿研究</h3><ol><li>Triton算子 提升了模型推理性能。</li><li>DAIR.AI 发布智能体缺陷的研究。</li><li>研究员 复现了可减少参数的新架构。</li><li>Polymathic AI 发布物理模拟数据集。</li></ol><h3>行业展望与社会影响</h3><ol><li>论文误读 导致内存巨头市值暴跌。</li><li>DeepSeek 因芯片适配导致进度变慢。</li><li>苹果 封锁了中国大陆的AI功能。</li><li>AI作品 反向向原创音乐人索要赔偿。</li><li>微软 品牌命名混乱让用户感到困惑。</li><li>OpenAI 可能在四月中旬发布新模型。</li></ol><h3>开源TOP项目</h3><ol><li>Block公司 开源编程智能体工具。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-          <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 OpenAI 发布代号为土豆的新模型。 微软 发布三款自研的基础模型。 前沿研究 Triton算子 提升了模型推理性能。 DAIR.AI 发布智能体缺陷的研究。 研究员 复现了可减少参数的新架构。 Polymathic AI 发布物理模拟数据集。 行业展望与社会影响 论文误读 导致内存巨头市值暴跌。 DeepSeek 因芯片适]]></description>
         </item>
       
   </channel>
