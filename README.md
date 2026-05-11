@@ -12,3 +12,5 @@
 > 日报前端项目已发布2.0: [Hextra-AI-Insight-Daily](https://github.com/justlovemaki/Hextra-AI-Insight-Daily) , 基于 Hugo 加 Hextra主题 构建。
 > 
 > 感谢阮一峰老师在[周刊352期](https://www.ruanyifeng.com/blog/2025/06/weekly-issue-352.html)的推荐。
+>
+> 全新日报站点：[hex2077.dev/](https://hex2077.dev/)
