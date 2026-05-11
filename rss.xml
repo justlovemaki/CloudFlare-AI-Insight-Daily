@@ -4,10 +4,18 @@
         <description><![CDATA[近 7 天的AI日报]]></description>
         <link>https://hex2077.dev/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 10 May 2026 02:38:48 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 11 May 2026 02:32:31 GMT</lastBuildDate>
         <atom:link href="https://justlovemaki.github.io/CloudFlare-AI-Insight-Daily/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 10 May 2026 02:38:48 GMT</pubDate>
+        <pubDate>Mon, 11 May 2026 02:32:31 GMT</pubDate>
         <language><![CDATA[zh-cn]]></language>
+        <item>
+            <title><![CDATA[2026-05-11日刊]]></title>
+            <description><![CDATA[[前往官网查看完整版 (hex2077.dev)](https://hex2077.dev/) ### 产品与功能更新 1. 谷歌云 发布AI加密支付协议。 2. NotebookLM团队 推出Huxe广播应用。 ### 前沿研究 1. 王宜平 利用AI工具打破数学纪录。 2. Sutton 解决流式强化学习缺陷。 3. 浙大与腾讯 发布导演式交互框架。 4. 研发团队 发布智能体监测框架。 ##]]></description>
+            <link>https://hex2077.dev/docs/2026-05/2026-05-11/</link>
+            <guid isPermaLink="false">https://hex2077.dev/docs/2026-05/2026-05-11/</guid>
+            <pubDate>Mon, 11 May 2026 10:32:31 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://hex2077.dev/">前往官网查看完整版 (hex2077.dev)</a></p> <h3>产品与功能更新</h3> <ol> <li>谷歌云 发布AI加密支付协议。</li> <li>NotebookLM团队 推出Huxe广播应用。</li> </ol> <h3>前沿研究</h3> <ol> <li>王宜平 利用AI工具打破数学纪录。</li> <li>Sutton 解决流式强化学习缺陷。</li> <li>浙大与腾讯 发布导演式交互框架。</li> <li>研发团队 发布智能体监测框架。</li> </ol> <h3>行业展望与社会影响</h3> <ol> <li>央视 报道国内算力需求猛增。</li> <li>OpenAI 签署高性能芯片电力合同。</li> <li>Anthropic 预言单人企业即将出现。</li> <li>数学家 面临AI时代的生存挑战。</li> <li>行业 推动本地AI成为系统默认。</li> <li>硅谷开发者 抢购国产大模型。</li> <li>Meta 发生AI代理清空邮件事件。</li> </ol> <h3>开源TOP项目</h3> <ol> <li>开发者 发布Claude代码优化工具。</li> </ol> <p>......</p> <p><em>[剩余内容已省略]</em></p> <hr> <p><strong>📢 关于 AI日报 的一次小调整</strong></p> <blockquote> </blockquote> <p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p> <blockquote> </blockquote> <p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p> <blockquote> </blockquote> <p>感谢您的理解与陪伴，让我们一起走得更远！</p> <blockquote> </blockquote> <p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p> <h3><a href="https://hex2077.dev/">前往官网查看完整版 (hex2077.dev)</a></h3> <blockquote> </blockquote> <p><strong>或者微信关注公众号: 何夕2077</strong></p> <blockquote> </blockquote> <p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small> <br/> <small>或加我进群提供建议:</small> <br/> <img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2026-05-10日刊]]></title>
             <description><![CDATA[[前往官网查看完整版 (hex2077.dev)](https://hex2077.dev/) ### 产品与功能更新 1. ChatGPT 5.5 Pro 成功解出数学博士级难题。 2. 蚂蚁百灵 发布万亿参数思考模型并计划开源。 3. 阶跃星辰 发布能感知情绪的实时语音模型。 4. DeepSeek 开启识图内测并支持逻辑拆解。 5. GPT-Realtime-2 实现了网页视频实时翻译。 #]]></description>
@@ -55,14 +63,6 @@
             <guid isPermaLink="false">https://ai.hubtoday.app//2026-05/2026-05-05/</guid>
             <pubDate>Tue, 05 May 2026 10:13:11 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>OpenAI 发布了低延迟语音架构。</li><li>FLUX.2 推出了超写实照片滤镜。</li><li>可灵 AI 支持 4K 海报动态化。</li><li>Cursor 发布了官方工作流插件包。</li></ol><h3>前沿研究</h3><ol><li>香港理工大学开源了手语翻译模型。</li><li>研究员发布了大模型安全攻击新方法。</li><li>Being-H0.7 模型提升了机器人性能。</li><li>MedMNIST 实现了医学数据零误差训练。</li><li>REALM 框架提升了跨模态感知能力。</li><li>科研人员推出了医疗影像推理技术。</li><li>Intern-Atlas 发布了 AI 科研演进图谱。</li></ol><h3>行业展望与社会影响</h3><ol><li>Anthropic 收购 Bun 引起了行业讨论。</li><li>英伟达研发十亿级超长上下文技术。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2026-05-04日刊]]></title>
-            <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 Anthropic 发布全能编程指南助力公司全自动运营。 NotebookLM 通过导入资料快速构建专家级技能文档。 前沿研究 斯坦福科学家利用 Evo 模型成功合成出全新病毒。 DeepSeek 发布技术报告显示新版本缺少核心记忆模块。 厦门大学推出高精度极速激光雷达重定位方案。 AI 模型能够精准识别并预判超早期胰腺癌信号]]></description>
-            <link>https://ai.hubtoday.app//2026-05/2026-05-04/</link>
-            <guid isPermaLink="false">https://ai.hubtoday.app//2026-05/2026-05-04/</guid>
-            <pubDate>Mon, 04 May 2026 10:11:23 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>Anthropic 发布全能编程指南助力公司全自动运营。</li><li>NotebookLM 通过导入资料快速构建专家级技能文档。</li></ol><h3>前沿研究</h3><ol><li>斯坦福科学家利用 Evo 模型成功合成出全新病毒。</li><li>DeepSeek 发布技术报告显示新版本缺少核心记忆模块。</li><li>厦门大学推出高精度极速激光雷达重定位方案。</li><li>AI 模型能够精准识别并预判超早期胰腺癌信号。</li><li>研究员利用遗传算法开发出比 Adam 更强的优化器。</li></ol><h3>行业展望与社会影响</h3><ol><li>马斯克与 OpenAI 官司开审并互相披露竞争内幕。</li><li>Anthropic 年化收入突破 440 亿美元创下历史新高。</li><li>OpenAI 与 AWS 合作且国产模型 Kimi 实现参数霸榜。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
