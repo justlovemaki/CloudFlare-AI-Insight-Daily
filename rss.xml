@@ -4,10 +4,18 @@
         <description><![CDATA[近 7 天的AI日报]]></description>
         <link>https://hex2077.dev/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 13 May 2026 02:58:47 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 14 May 2026 02:23:11 GMT</lastBuildDate>
         <atom:link href="https://justlovemaki.github.io/CloudFlare-AI-Insight-Daily/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 13 May 2026 02:58:47 GMT</pubDate>
+        <pubDate>Thu, 14 May 2026 02:23:11 GMT</pubDate>
         <language><![CDATA[zh-cn]]></language>
+        <item>
+            <title><![CDATA[2026-05-14日刊]]></title>
+            <description><![CDATA[[前往官网查看完整版 (hex2077.dev)](https://hex2077.dev/) ### 产品与功能更新 1. OpenAI 发布 Windows 安全沙盒 2. 微软 发布电网潮流预测模型 3. Meta 升级短视频社交推荐架构 4. Meta AI 推出对话隐私聊天模式 5. xBubble AI 发布低代码智能工具 ### 前沿研究 1. 研究者 发布高精度全球农田地图 2. ]]></description>
+            <link>https://hex2077.dev/docs/2026-05/2026-05-14/</link>
+            <guid isPermaLink="false">https://hex2077.dev/docs/2026-05/2026-05-14/</guid>
+            <pubDate>Thu, 14 May 2026 10:23:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://hex2077.dev/">前往官网查看完整版 (hex2077.dev)</a></p> <h3>产品与功能更新</h3> <ol> <li>OpenAI 发布 Windows 安全沙盒</li> <li>微软 发布电网潮流预测模型</li> <li>Meta 升级短视频社交推荐架构</li> <li>Meta AI 推出对话隐私聊天模式</li> <li>xBubble AI 发布低代码智能工具</li> </ol> <h3>前沿研究</h3> <ol> <li>研究者 发布高精度全球农田地图</li> <li>科学家 通过特征融合提升画质</li> <li>研究员 发布大模型新循环架构</li> <li>学术界 发现智能体调用工具弱点</li> <li>字节跳动 发布高速图像生成模型</li> <li>研发团队 发布智能体工程实战评测</li> </ol> <h3>行业展望与社会影响</h3> <ol> <li>林俊旸 创立高估值智能体公司</li> <li>特朗普访华团 洽谈芯片出口事宜</li> <li>英伟达 市值超越多个国家总产值</li> <li>官方 尝试使用医疗 AI 支付模型</li> <li>专家 分析中国智能体行业现状</li> </ol> <p>......</p> <p><em>[剩余内容已省略]</em></p> <hr> <p><strong>📢 关于 AI日报 的一次小调整</strong></p> <blockquote> </blockquote> <p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p> <blockquote> </blockquote> <p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p> <blockquote> </blockquote> <p>感谢您的理解与陪伴，让我们一起走得更远！</p> <blockquote> </blockquote> <p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p> <h3><a href="https://hex2077.dev/">前往官网查看完整版 (hex2077.dev)</a></h3> <blockquote> </blockquote> <p><strong>或者微信关注公众号: 何夕2077</strong></p> <blockquote> </blockquote> <p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small> <br/> <small>或加我进群提供建议:</small> <br/> <img src="https://source.hex2077.dev/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2026-05-13日刊]]></title>
             <description><![CDATA[[前往官网查看完整版 (hex2077.dev)](https://hex2077.dev/) ### 产品与功能更新 1. DuckDB 发布 Quack 协议提升远程查询性能。 2. Meta 升级数据系统为大模型训练提供支撑。 3. Claude 推出快速模式让代码开发更高效。 4. 宇树科技发布载人机甲并开启量产时代。 5. AWS 云平台支持免账号调用克劳德服务。 ### 前沿研究 1.]]></description>
@@ -55,14 +63,6 @@
             <guid isPermaLink="false">https://ai.hubtoday.app//2026-05/2026-05-08/</guid>
             <pubDate>Fri, 08 May 2026 10:32:49 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>OpenAI 发布实时翻译模型接口。</li><li>机器人 展现自主打蛋通用控制。</li><li>Perplexity 发布个人电脑版应用。</li><li>字节跳动 上线移动端开发助手。</li></ol><h3>前沿研究</h3><ol><li>Meta 发布编程评测显示 AI 失败。</li><li>Anthropic 开源代码解释技术。</li><li>研发团队 开源多模态搜索技术。</li><li>科学家 发布消除图像幻觉新方法。</li><li>研究者 利用物理规律识别假脸。</li><li>Anthropic 发布模型对齐新成果。</li></ol><h3>行业展望与社会影响</h3><ol><li>马斯克 宣布 xAI 并入 SpaceX。</li><li>腾讯 混元模型调用量增长十倍。</li><li>风投合伙人 发文反驳 AI 失业论。</li><li>韩国寺庙 迎来首位机器人僧侣。</li><li>全球 开启零代码黑客松比赛。</li></ol><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2026-05-07日刊]]></title>
-            <description><![CDATA[前往官网查看完整版 (ai.hubtoday.app) 产品与功能更新 Claude 推出梦境预览功能提升智能体逻辑。 Claude 上线托管代理平台方便自动化开发。 Anthropic 合作 SpaceX 提高用户对话限额。 ChatGPT 推出 Excel 插件帮助处理复杂数据。 ChatGPT 上线广告平台并升级至新模型。 OpenAI 发布新协议提升算力集群训练效率。 蚂蚁阿福上线体检报告]]></description>
-            <link>https://ai.hubtoday.app//2026-05/2026-05-07/</link>
-            <guid isPermaLink="false">https://ai.hubtoday.app//2026-05/2026-05-07/</guid>
-            <pubDate>Thu, 07 May 2026 10:50:22 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></p><h3>产品与功能更新</h3><ol><li>Claude 推出梦境预览功能提升智能体逻辑。</li><li>Claude 上线托管代理平台方便自动化开发。</li><li>Anthropic 合作 SpaceX 提高用户对话限额。</li><li>ChatGPT 推出 Excel 插件帮助处理复杂数据。</li><li>ChatGPT 上线广告平台并升级至新模型。</li><li>OpenAI 发布新协议提升算力集群训练效率。</li><li>蚂蚁阿福上线体检报告智能解读功能。</li></ol><h3>前沿研究</h3><ol><li>学术团队发布开源模型打破行业搜索垄断。</li><li>研究人员发布农业大模型提高作物分析效率。</li><li>机构发布评测体系测试智能体的办公能力。</li><li>研究人员推出动画模型提升画面艺术表达。</li><li>微软发布可解释框架提升智能体预测能力。</li></ol><h3>行业展望与社会影响</h3><p>......</p><p><em>[剩余内容已省略]</em></p><hr><p><strong>📢 关于 AI日报 的一次小调整</strong></p><blockquote></blockquote><p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p><blockquote></blockquote><p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p><blockquote></blockquote><p>感谢您的理解与陪伴，让我们一起走得更远！</p><blockquote></blockquote><p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p><h3><a href="https://ai.hubtoday.app/">前往官网查看完整版 (ai.hubtoday.app)</a></h3><blockquote></blockquote><p><strong>或者微信关注公众号: 何夕2077</strong></p><blockquote></blockquote><p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small><br/><small>或加我进群提供建议:</small><br/><img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
