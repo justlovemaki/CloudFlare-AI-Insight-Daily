@@ -4,10 +4,18 @@
         <description><![CDATA[近 7 天的AI日报]]></description>
         <link>https://hex2077.dev/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 17 May 2026 02:42:14 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 May 2026 02:21:58 GMT</lastBuildDate>
         <atom:link href="https://justlovemaki.github.io/CloudFlare-AI-Insight-Daily/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 17 May 2026 02:42:14 GMT</pubDate>
+        <pubDate>Mon, 18 May 2026 02:21:58 GMT</pubDate>
         <language><![CDATA[zh-cn]]></language>
+        <item>
+            <title><![CDATA[2026-05-18日刊]]></title>
+            <description><![CDATA[[前往官网查看完整版 (hex2077.dev)](https://hex2077.dev/) ### 产品与功能更新 1. 可灵AI在戛纳展示电影合作案例。 2. 蔚蓝科技发布自研算力智能机器狗。 3. OpenAI合并聊天与编程工具。 4. 马斯克宣布Grok上线自动化功能。 ### 前沿研究 1. 研究者讨论大模型认知的本质。 2. 谷歌团队发现模型内置几何计算器。 ### 行业展望与社会影]]></description>
+            <link>https://hex2077.dev/docs/2026-05/2026-05-18/</link>
+            <guid isPermaLink="false">https://hex2077.dev/docs/2026-05/2026-05-18/</guid>
+            <pubDate>Mon, 18 May 2026 10:21:58 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://hex2077.dev/">前往官网查看完整版 (hex2077.dev)</a></p> <h3>产品与功能更新</h3> <ol> <li>可灵AI在戛纳展示电影合作案例。</li> <li>蔚蓝科技发布自研算力智能机器狗。</li> <li>OpenAI合并聊天与编程工具。</li> <li>马斯克宣布Grok上线自动化功能。</li> </ol> <h3>前沿研究</h3> <ol> <li>研究者讨论大模型认知的本质。</li> <li>谷歌团队发现模型内置几何计算器。</li> </ol> <h3>行业展望与社会影响</h3> <ol> <li>Mistral CEO建议欧洲建立算力基地。</li> <li>阳狮收购数据平台打造广告智能体。</li> <li>Figure机器人连续无休处理包裹。</li> <li>全自主AI机器人咖啡店在华开业。</li> <li>微软主管预测白领工作将自动化。</li> <li>杭州启用国家级具身智能中试基地。</li> <li>开源联盟启动分布式模型训练计划。</li> </ol> <h3>开源TOP项目</h3> <ol> <li>Semble开源高效代码搜索工具。</li> </ol> <p>......</p> <p><em>[剩余内容已省略]</em></p> <hr> <p><strong>📢 关于 AI日报 的一次小调整</strong></p> <blockquote> </blockquote> <p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p> <blockquote> </blockquote> <p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p> <blockquote> </blockquote> <p>感谢您的理解与陪伴，让我们一起走得更远！</p> <blockquote> </blockquote> <p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p> <h3><a href="https://hex2077.dev/">前往官网查看完整版 (hex2077.dev)</a></h3> <blockquote> </blockquote> <p><strong>或者微信关注公众号: 何夕2077</strong></p> <blockquote> </blockquote> <p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small> <br/> <small>或加我进群提供建议:</small> <br/> <img src="https://source.hex2077.dev/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2026-05-17日刊]]></title>
             <description><![CDATA[[前往官网查看完整版 (hex2077.dev)](https://hex2077.dev/) ### 产品与功能更新 1. 英伟达 发布开源视频模型 SANA-WM。 2. 苹果 推出首款五千元级 AI 智能眼镜。 3. 阿里健康 发布医生专用医学 AI 助手。 ### 前沿研究 1. 研究人员 推出 GoR 科研灵感生成方案。 2. 研发团队 开发出代码驱动的物理模拟器。 3. 智能体 ASH]]></description>
@@ -55,14 +63,6 @@
             <guid isPermaLink="false">https://hex2077.dev/docs/2026-05/2026-05-12/</guid>
             <pubDate>Tue, 12 May 2026 10:13:20 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://hex2077.dev/">前往官网查看完整版 (hex2077.dev)</a></p> <h3>产品与功能更新</h3> <ol> <li>Claude 上线实时任务管理系统</li> <li>Claude Code 推出智能体视图功能</li> <li>Thinking Machines 发布新交互模型</li> <li>通义千问 深度接入淘宝电商生态</li> <li>Replit 发布并行编程智能体工具</li> </ol> <h3>前沿研究</h3> <ol> <li>微软 发布 AI 社交能力研究报告</li> <li>Sword 模型 提升机器人视觉能力</li> <li>AIDA 框架 提高企业数据分析效率</li> <li>OST 框架 大幅降低模型训练成本</li> </ol> <h3>行业展望与社会影响</h3> <ol> <li>谷歌 称黑客正利用 AI 挖掘漏洞</li> <li>OpenAI 成立公司专门负责商业化</li> <li>英国 NHS 向 AI 公司开放患者数据</li> <li>森马 利用 AI 缩短产品上新周期</li> <li>Devin 智能体 年收入达四亿美元</li> </ol> <p>......</p> <p><em>[剩余内容已省略]</em></p> <hr> <p><strong>📢 关于 AI日报 的一次小调整</strong></p> <blockquote> </blockquote> <p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p> <blockquote> </blockquote> <p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p> <blockquote> </blockquote> <p>感谢您的理解与陪伴，让我们一起走得更远！</p> <blockquote> </blockquote> <p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p> <h3><a href="https://hex2077.dev/">前往官网查看完整版 (hex2077.dev)</a></h3> <blockquote> </blockquote> <p><strong>或者微信关注公众号: 何夕2077</strong></p> <blockquote> </blockquote> <p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small> <br/> <small>或加我进群提供建议:</small> <br/> <img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2026-05-11日刊]]></title>
-            <description><![CDATA[[前往官网查看完整版 (hex2077.dev)](https://hex2077.dev/) ### 产品与功能更新 1. 谷歌云 发布AI加密支付协议。 2. NotebookLM团队 推出Huxe广播应用。 ### 前沿研究 1. 王宜平 利用AI工具打破数学纪录。 2. Sutton 解决流式强化学习缺陷。 3. 浙大与腾讯 发布导演式交互框架。 4. 研发团队 发布智能体监测框架。 ##]]></description>
-            <link>https://hex2077.dev/docs/2026-05/2026-05-11/</link>
-            <guid isPermaLink="false">https://hex2077.dev/docs/2026-05/2026-05-11/</guid>
-            <pubDate>Mon, 11 May 2026 10:32:31 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://hex2077.dev/">前往官网查看完整版 (hex2077.dev)</a></p> <h3>产品与功能更新</h3> <ol> <li>谷歌云 发布AI加密支付协议。</li> <li>NotebookLM团队 推出Huxe广播应用。</li> </ol> <h3>前沿研究</h3> <ol> <li>王宜平 利用AI工具打破数学纪录。</li> <li>Sutton 解决流式强化学习缺陷。</li> <li>浙大与腾讯 发布导演式交互框架。</li> <li>研发团队 发布智能体监测框架。</li> </ol> <h3>行业展望与社会影响</h3> <ol> <li>央视 报道国内算力需求猛增。</li> <li>OpenAI 签署高性能芯片电力合同。</li> <li>Anthropic 预言单人企业即将出现。</li> <li>数学家 面临AI时代的生存挑战。</li> <li>行业 推动本地AI成为系统默认。</li> <li>硅谷开发者 抢购国产大模型。</li> <li>Meta 发生AI代理清空邮件事件。</li> </ol> <h3>开源TOP项目</h3> <ol> <li>开发者 发布Claude代码优化工具。</li> </ol> <p>......</p> <p><em>[剩余内容已省略]</em></p> <hr> <p><strong>📢 关于 AI日报 的一次小调整</strong></p> <blockquote> </blockquote> <p>坦白说，想要长久地把<strong>AI日报</strong>做下去，单靠&quot;为爱发电”确实面临现实压力。为了更有热情的<strong>投入精力</strong>， 日报网站版需要来自你们的访问。</p> <blockquote> </blockquote> <p>由于 RSS 无法展示广告带来收入，即日起 RSS 将<strong>试运行&quot;摘要模式”一段时间</strong>。</p> <blockquote> </blockquote> <p>感谢您的理解与陪伴，让我们一起走得更远！</p> <blockquote> </blockquote> <p>👇 <strong>点击下方链接，阅读今日完整资讯</strong></p> <h3><a href="https://hex2077.dev/">前往官网查看完整版 (hex2077.dev)</a></h3> <blockquote> </blockquote> <p><strong>或者微信关注公众号: 何夕2077</strong></p> <blockquote> </blockquote> <p><small>如有建议，欢迎随时邮件沟通：<a href="mailto:justlikemaki@foxmail.com">justlikemaki@foxmail.com</a></small> <br/> <small>或加我进群提供建议:</small> <br/> <img src="https://source.hubtoday.app/logo/wechat-qun.jpg" alt="加我进群-何夕2077AI日报问题反馈"></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
