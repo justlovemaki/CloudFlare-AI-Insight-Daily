@@ -2,8 +2,8 @@ name: Build Daily Journal
 
 on:
   # 每天UTC时间0点自动触发 (对应北京时间早上8点)
-  schedule:
-    - cron: '0 23 * * *'
+  # schedule:
+  #   - cron: '0 23 * * *'
     
   # 手动触发
   workflow_dispatch:
